@@ -3,7 +3,7 @@
 {% block title %}Services | Born Free, Limerence Coaching{% endblock %}
 
 {% block content %}
-<div class="container  pt-5 pb-5">
+<div class="container pt-5 pb-5">
     <!-- Header Section -->
     <div class="text-center mb-4">
         <h1 class="text-dark mb-3">Our Services</h1>
@@ -16,37 +16,37 @@
         <div class="row">
             <!-- Package 1 -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="{% static 'images/plumeria-placeholder.jpg' %}" class="card-img-top" alt="Plumeria Package">
+                <div class="card h-100 plumeria-card">
+                    <img src="{% static 'images/plumeria-flower.jpg' %}" class="card-img-top" alt="Plumeria Package">
                     <div class="card-body">
                         <h5 class="card-title">Plumeria ($175/session)</h5>
                         <p class="card-text">4 weeks of weekly coaching sessions.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#plumeriaModal">Learn More</button>
-                        <a href="{% url 'contact' %}" class="btn btn-secondary ">Interested</a>
+                        <button type="button" class="btn btn-primary plumeria-btn mt-2 " data-bs-toggle="modal" data-bs-target="#plumeriaModal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary plumeria-btn mt-2 ">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Package 2 -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="{% static 'images/hibiscus-placeholder.jpg' %}" class="card-img-top" alt="Hibiscus Package">
+                <div class="card h-100 hibiscus-card">
+                    <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top" alt="Hibiscus Package">
                     <div class="card-body">
                         <h5 class="card-title">Hibiscus ($150/session)</h5>
                         <p class="card-text">8 weeks of weekly coaching sessions.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hibiscusModal">Learn More</button>
-                        <a href="{% url 'contact' %}" class="btn btn-secondary ">Interested</a>
+                        <button type="button" class="btn btn-primary hibiscus-btn mt-2 " data-bs-toggle="modal" data-bs-target="#hibiscusModal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary hibiscus-btn mt-2 ">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Package 3 -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="{% static 'images/water-lilly-placeholder.jpg' %}" class="card-img-top" alt="Water Lilly Package">
+                <div class="card h-100 water-lily-card">
+                    <img src="{% static 'images/water-lily-flower.jpg' %}" class="card-img-top" alt="Water Lily Package">
                     <div class="card-body">
-                        <h5 class="card-title">Water Lilly ($125/session)</h5>
+                        <h5 class="card-title">Water Lily ($125/session)</h5>
                         <p class="card-text">12 weeks of weekly coaching sessions.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#waterLillyModal">Learn More</button>
-                        <a href="{% url 'contact' %}" class="btn btn-secondary ">Interested</a>
+                        <button type="button" class="btn btn-primary water-lily-btn mt-2 " data-bs-toggle="modal" data-bs-target="#waterLilyModal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary water-lily-btn mt-2">Interested</a>
                     </div>
                 </div>
             </div>
@@ -59,32 +59,30 @@
         <div class="row">
             <!-- Monthly Process Groups -->
             <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="{% static 'images/process-group-placeholder.jpg' %}" class="card-img-top" alt="Process Group">
+                <div class="card h-100 orchid-card">
+                    <img src="{% static 'images/orchid.jpg' %}" class="card-img-top" alt="Process Group">
                     <div class="card-body">
                         <h5 class="card-title">Monthly Process Groups ($40/month)</h5>
                         <p class="card-text">Join our monthly process group for continued support and community building.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#processGroupModal">Learn More</button>
-                        <a href="{% url 'contact' %}" class="btn btn-secondary ">Interested</a>
+                        <button type="button" class="btn btn-primary orchid-btn mt-2" data-bs-toggle="modal" data-bs-target="#processGroupModal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary orchid-btn mt-2">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Individual Sessions -->
             <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="{% static 'images/individual-session-placeholder.jpg' %}" class="card-img-top" alt="Individual Session">
+                <div class="card h-100 chrysanthemum-card">
+                    <img src="{% static 'images/Chrysanthemum-flower.jpg' %}" class="card-img-top" alt="Individual Session">
                     <div class="card-body">
                         <h5 class="card-title">Individual Sessions ($200/session)</h5>
                         <p class="card-text">Individual sessions are available for those seeking more personalized support.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#individualSessionModal">Learn More</button>
-                        <a href="{% url 'contact' %}" class="btn btn-secondary ">Interested</a>
+                        <button type="button" class="btn btn-primary chrysanthemum-btn" data-bs-toggle="modal" data-bs-target="#individualSessionModal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary chrysanthemum-btn">Interested</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 </div>
 
 <!-- Modals for Package Details -->
@@ -96,7 +94,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>This package includes weekly coaching sessions, over a period of 4 weeks. During this time, we will explore the meaning of limerence and how it differs from love, signs and symptoms, your specific situation and how it manifests in your day to day life, tracking thought patterns, neuropsychological components, mindfulness skills, triggers, coping skills to ride out urges and compulsions, plus ways to replace limerent behavior with positive and meaningful experiences.</p>
+                <p>This package includes weekly coaching sessions, over a period of 4 weeks. During this time, we will explore the meaning of limerence and how it differs from love, signs and symptoms, your specific situation and how it manifests in your day-to-day life, tracking thought patterns, neuropsychological components, mindfulness skills, triggers, coping skills to ride out urges and compulsions, plus ways to replace limerent behavior with positive and meaningful experiences.</p>
             </div>
             <div class="modal-footer">
                 <a href="{% url 'contact' %}" class="btn btn-primary">Interested</a>
@@ -112,7 +110,6 @@
                 <h5 class="modal-title" id="hibiscusModalLabel">Hibiscus Package ($150/session)</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-           <!-- Modal Body for Hibiscus Package -->
             <div class="modal-body">
                 <p>This package includes weekly sessions, over a period of 8 weeks. It is structured similarly to the 4-week package, though it incorporates exploration of childhood experiences and impact on limerence, healthy relationship skills, and further mindfulness practice. This package will also include use of an assessment tool to measure progress in week 1 and 8.</p>
             </div>
@@ -123,11 +120,11 @@
     </div>
 </div>
 
-<div class="modal fade" id="waterLillyModal" tabindex="-1" aria-labelledby="waterLillyModalLabel" aria-hidden="true">
+<div class="modal fade" id="waterLilyModal" tabindex="-1" aria-labelledby="waterLilyModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="waterLillyModalLabel">Water Lilly Package ($125/session)</h5>
+                <h5 class="modal-title" id="waterLilyModalLabel">Water Lily Package ($125/session)</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -143,7 +140,7 @@
 <div class="modal fade" id="processGroupModal" tabindex="-1" aria-labelledby="processGroupModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+<div class="modal-header">
                 <h5 class="modal-title" id="processGroupModalLabel">Monthly Process Groups ($40/month)</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -173,6 +170,7 @@
         </div>
     </div>
 </div>
+
 <style>
     /* Card Styles */
     .card {
@@ -194,15 +192,12 @@
         color: #6c757d;
     }
 
-
-
     /* Container Styles */
     .container {
         max-width: 1000px;
         margin: auto;
         padding: 0 15px;
         background-color: #f0f4f8; /* Light grey from the color palette */
-       
         border-radius: 8px;
     }
 
@@ -256,6 +251,69 @@
     }
     .text-muted {
         color: #6c757d !important;
+    }
+
+    /* Flower-specific styles */
+    .plumeria-card {
+        background-color: #fff7e6; /* Light color inspired by plumeria */
+    }
+    .plumeria-btn {
+        background-color: #ffd54f; /* Yellow inspired by plumeria */
+        border-color: #ffd54f;
+    }
+    .plumeria-btn:hover {
+        background-color: #ffc107;
+        border-color: #ffc107;
+    }
+    .hibiscus-card {
+        background-color: #ffe6e6; /* Light color inspired by hibiscus */
+    }
+    .hibiscus-btn {
+        background-color: #ff6f61; /* Red inspired by hibiscus */
+        border-color: #ff6f61;
+    }
+    .hibiscus-btn:hover {
+        background-color: #ff3d00;
+        border-color: #ff3d00;
+    }
+    .water-lily-card {
+        background-color: #e6f7ff; /* Light color inspired by water lily */
+    }
+    .water-lily-btn {
+        background-color: #29b6f6; /* Blue inspired by water lily */
+        border-color: #29b6f6;
+    }
+    .water-lily-btn:hover {
+        background-color: #0288d1;
+        border-color: #0288d1;
+    }
+    .orchid-card {
+        background-color: #f3e5f5; /* Light color inspired by orchid */
+    }
+    .orchid-btn {
+        background-color: #ba68c8; /* Purple inspired by orchid */
+        border-color: #ba68c8;
+    }
+    .orchid-btn:hover {
+        background-color: #9c27b0;
+        border-color: #9c27b0;
+    }
+    .chrysanthemum-card {
+        background-color: #fffde7; /* Light color inspired by chrysanthemum */
+    }
+    .chrysanthemum-btn {
+        background-color: #fff176; /* Yellow inspired by chrysanthemum */
+        border-color: #fff176;
+    }
+    .chrysanthemum-btn:hover {
+        background-color: #ffee58;
+        border-color: #ffee58;
+    }
+
+    /* Image Styles */
+    .card-img-top {
+        height: 200px; /* Ensuring all images have the same height */
+        object-fit: cover; /* Ensuring no image stretching */
     }
 </style>
 

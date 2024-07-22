@@ -1,5 +1,180 @@
 {% extends 'base.html' %}
-{% block title %}About Us{% endblock %}
+
+{% block title %}About Me | Born Free Limerence Coaching{% endblock %}
+{% load static %}
 {% block content %}
-<h1>About Us</h1>
+<!-- Introduction Section -->
+<div class="hero-section text-center d-flex align-items-center justify-content-center">
+    <div class="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-dark">About Me</h1>
+        <p class="lead text-muted">Discover my journey and approach to wellness coaching.</p>
+    </div>
+</div>
+
+<!-- Journey to Coaching Section -->
+<div class="container my-5">
+    <h2 class="text-center text-dark mb-4">How Did I Get Here?</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h5>2007</h5>
+            <p>Started my reparative journey as a young adult dealing with depression.</p>
+        </div>
+        <div class="timeline-item">
+            <h5>2010</h5>
+            <p>Graduated with a BA in Psychology from the University of California, Irvine.</p>
+        </div>
+        <div class="timeline-item">
+            <h5>2014</h5>
+            <p>Obtained a master's in Marriage and Family Therapy and became a registered therapist in New Hampshire.</p>
+        </div>
+        <div class="timeline-item">
+            <h5>Present</h5>
+            <p>Started my coaching business, focusing on limerence, combining my professional experience with personal insights.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Professional Experience Section -->
+<div class="container my-5">
+    <h2 class="text-center text-dark mb-4">Professional Experience</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle text-primary"></i> 10 years of experience as a therapist.</li>
+                <li><i class="bi bi-check-circle text-primary"></i> Worked in community mental health centers.</li>
+                <li><i class="bi bi-check-circle text-primary"></i> Provided individual therapy through telehealth.</li>
+                <li><i class="bi bi-check-circle text-primary"></i> Experienced with various diagnoses such as OCD, PTSD, ADHD, etc.</li>
+                <li><i class="bi bi-check-circle text-primary"></i> Designed a Mindfulness-Based Cognitive Therapy group.</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/professional-placeholder.jpg' %}" class="img-fluid rounded" alt="Professional Experience">
+        </div>
+    </div>
+</div>
+
+<!-- Therapeutic Approaches Section -->
+<div class="container my-5">
+    <h2 class="text-center text-dark mb-4">Therapeutic Approaches</h2>
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <i class="bi bi-heart text-primary"></i>
+                    <h5 class="card-title">Dialectical Behavior Therapy</h5>
+                    <p class="card-text">Practical skills to tolerate intense urges and emotions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <i class="bi bi-heart text-primary"></i>
+                    <h5 class="card-title">Existential Therapy</h5>
+                    <p class="card-text">Exploring purpose and meaning in life.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <i class="bi bi-heart text-primary"></i>
+                    <h5 class="card-title">Strength-Based Therapy</h5>
+                    <p class="card-text">Focusing on individual strengths to overcome challenges.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mindfulness and Research Section -->
+<div class="container my-5">
+    <h2 class="text-center text-dark mb-4">Mindfulness and Research</h2>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <p class="text-muted">Mindfulness is a central theme throughout my program and has been shown to improve anxiety, depression, immune functioning, mental clarity and focus, sleep, and overall quality of life. In their systematic review on “Meditation Programs for Stress and Well-Being,” Goyal, Singh, Sibinga et al. found that mindfulness meditation programs reduce psychological stress associated with depression and anxiety, to the extent that regular meditation was analogous to using psychotropic medication. In other words, mindfulness has the potential to improve the way we respond to stressors.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/mindfulness-placeholder.jpg' %}" class="img-fluid rounded" alt="Mindfulness">
+        </div>
+    </div>
+</div>
+
+<!-- Lived Experience and Approach Section -->
+<div class="container my-5">
+    <h2 class="text-center text-dark mb-4">My Approach</h2>
+    <p class="text-muted">Developing this program has given me the freedom to share parts of my lived experience, which are vital in aiding treatment. In working with me, I have crafted a structured plan to target the depths of limerence. While structured, I invite questions and exploration, which are integral to recovery. Although I am educated and trained in providing psychotherapy, it is also my lived experience which colors my style of care and support. Through suffering, I have acquired seeds of wisdom which I believe will be valuable in our work together.</p>
+</div>
+
+<style>
+    .hero-section {
+        background: url('{% static 'images/hero-background.jpg' %}') no-repeat center center/cover;
+        min-height: 50vh;
+        position: relative;
+    }
+    .overlay {
+        background: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: #007bff;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    .timeline-item {
+        padding: 10px 15px;
+        position: relative;
+        background: inherit;
+        width: 50%;
+    }
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #007bff;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .timeline-item:nth-child(odd) {
+        left: 50%;
+    }
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    .timeline-item:nth-child(odd)::after {
+        left: -16px;
+    }
+    .timeline-item:nth-child(even)::after {
+        right: -16px;
+    }
+    .timeline-item h5 {
+        margin: 0 0 10px;
+        color: #007bff;
+    }
+    .timeline-item p {
+        margin: 0;
+    }
+</style>
 {% endblock %}
