@@ -92,7 +92,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="{% static 'images/logo-placeholder.png' %}" alt="Logo">
+                <img src="{% static 'images/limerence-logo.png' %}" alt="Logo">
 <div class="row d-flex d-md-none justify-content-center align-items-center"><div class="col-12 text-center"> Born Free </div>   <div class="col-12 text-center"> Limerence Coaching  </div>  </div>
                <div class="d-none d-md-flex" > Born Free  Limerence Coaching </div>
             </a>
@@ -121,6 +121,8 @@
         </div>
     </nav>
     <main>
+        {% block extra_hero %}
+        {% endblock %}
         <div class="container ">
             {% block content %}
             {% endblock %}

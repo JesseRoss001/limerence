@@ -1,17 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block title %}Home | Born Free Limerence Coaching{% endblock %}
 
-{% block content %}
-<!-- Hero Section -->
-<div class="hero-section text-center py-5">
-    <div class="overlay">
+{% block extra_hero %}
+<div class="hero-section text-center d-flex align-items-center justify-content-center">
+    <div class="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center">
         <h1 class="text-dark">Born Free Limerence Coaching</h1>
         <p class="lead text-muted">Freedom through letting go</p>
         <a href="#intro" class="btn btn-primary">Get Started</a>
     </div>
 </div>
+{% endblock %}
 
+{% block content %}
 <!-- Introduction Section -->
 <div id="intro" class="container my-5">
     <div class="row align-items-center">
@@ -104,16 +106,23 @@
     <a href="{% url 'contact' %}" class="btn btn-primary">Get in Touch</a>
 </div>
 
-{% endblock %}
-
-{% block styles %}
 <style>
     .hero-section {
         background: url('{% static 'images/hero-background.jpg' %}') no-repeat center center/cover;
+        min-height: 50vh;
+        position: relative;
     }
     .overlay {
         background: rgba(255, 255, 255, 0.6);
-        padding: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .card img {
         max-height: 200px;
@@ -124,4 +133,9 @@
         height: 100px;
     }
 </style>
+
 {% endblock %}
+
+
+
+
