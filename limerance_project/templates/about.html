@@ -58,7 +58,7 @@
     <h2 class="text-center text-dark mb-4">Therapeutic Approaches</h2>
     <div class="row text-center">
         <div class="col-md-4 mb-4">
-            <div class="card h-100">
+            <div class="card h-100 plumeria-card">
                 <div class="card-body">
                     <i class="bi bi-heart text-primary"></i>
                     <h5 class="card-title">Dialectical Behavior Therapy</h5>
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card h-100">
+            <div class="card h-100 hibiscus-card">
                 <div class="card-body">
                     <i class="bi bi-heart text-primary"></i>
                     <h5 class="card-title">Existential Therapy</h5>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card h-100">
+            <div class="card h-100 orchid-card">
                 <div class="card-body">
                     <i class="bi bi-heart text-primary"></i>
                     <h5 class="card-title">Strength-Based Therapy</h5>
@@ -92,7 +92,9 @@
     <h2 class="text-center text-dark mb-4">Mindfulness and Research</h2>
     <div class="row align-items-center">
         <div class="col-md-6">
-            <p class="text-muted">Mindfulness is a central theme throughout my program and has been shown to improve anxiety, depression, immune functioning, mental clarity and focus, sleep, and overall quality of life. In their systematic review on “Meditation Programs for Stress and Well-Being,” Goyal, Singh, Sibinga et al. found that mindfulness meditation programs reduce psychological stress associated with depression and anxiety, to the extent that regular meditation was analogous to using psychotropic medication. In other words, mindfulness has the potential to improve the way we respond to stressors.</p>
+            <div class="card mindfulness-card p-4">
+                <p class="text-muted">Mindfulness is a central theme throughout my program and has been shown to improve anxiety, depression, immune functioning, mental clarity and focus, sleep, and overall quality of life. In their systematic review on “Meditation Programs for Stress and Well-Being,” Goyal, Singh, Sibinga et al. found that mindfulness meditation programs reduce psychological stress associated with depression and anxiety, to the extent that regular meditation was analogous to using psychotropic medication. In other words, mindfulness has the potential to improve the way we respond to stressors.</p>
+            </div>
         </div>
         <div class="col-md-6">
             <img src="{% static 'images/mindfulness-placeholder.jpg' %}" class="img-fluid rounded" alt="Mindfulness">
@@ -103,12 +105,14 @@
 <!-- Lived Experience and Approach Section -->
 <div class="container my-5">
     <h2 class="text-center text-dark mb-4">My Approach</h2>
-    <p class="text-muted">Developing this program has given me the freedom to share parts of my lived experience, which are vital in aiding treatment. In working with me, I have crafted a structured plan to target the depths of limerence. While structured, I invite questions and exploration, which are integral to recovery. Although I am educated and trained in providing psychotherapy, it is also my lived experience which colors my style of care and support. Through suffering, I have acquired seeds of wisdom which I believe will be valuable in our work together.</p>
+    <div class="card approach-card p-4">
+        <p class="text-muted">Developing this program has given me the freedom to share parts of my lived experience, which are vital in aiding treatment. In working with me, I have crafted a structured plan to target the depths of limerence. While structured, I invite questions and exploration, which are integral to recovery. Although I am educated and trained in providing psychotherapy, it is also my lived experience which colors my style of care and support. Through suffering, I have acquired seeds of wisdom which I believe will be valuable in our work together.</p>
+    </div>
 </div>
 
 <style>
     .hero-section {
-        background: url('{% static 'images/hero-background.jpg' %}') no-repeat center center/cover;
+        background: linear-gradient(to right, #fff7e6, #ffe6e6, #f3e5f5, #e6f7ff);
         min-height: 50vh;
         position: relative;
     }
@@ -175,6 +179,92 @@
     }
     .timeline-item p {
         margin: 0;
+    }
+    /* Card Styles */
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        background-color: #ffffff;
+    }
+    .card:hover {
+        transform: scale(1.02);
+    }
+    .card-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #4a90e2; /* Blue from the color palette */
+    }
+    .card-text {
+        font-family: 'Lato', sans-serif;
+        color: #6c757d;
+    }
+
+    /* Flower-specific styles */
+    .plumeria-card {
+        background-color: #fff7e6; /* Light color inspired by plumeria */
+    }
+    .plumeria-btn {
+        background-color: #ffd54f; /* Yellow inspired by plumeria */
+        border-color: #ffd54f;
+    }
+    .plumeria-btn:hover {
+        background-color: #ffc107;
+        border-color: #ffc107;
+    }
+    .hibiscus-card {
+        background-color: #ffe6e6; /* Light color inspired by hibiscus */
+    }
+    .hibiscus-btn {
+        background-color: #ff6f61; /* Red inspired by hibiscus */
+        border-color: #ff6f61;
+    }
+    .hibiscus-btn:hover {
+        background-color: #ff3d00;
+        border-color: #ff3d00;
+    }
+    .water-lily-card {
+        background-color: #e6f7ff; /* Light color inspired by water lily */
+    }
+    .water-lily-btn {
+        background-color: #29b6f6; /* Blue inspired by water lily */
+        border-color: #29b6f6;
+    }
+    .water-lily-btn:hover {
+        background-color: #0288d1;
+        border-color: #0288d1;
+    }
+    .orchid-card {
+        background-color: #f3e5f5; /* Light color inspired by orchid */
+    }
+    .orchid-btn {
+        background-color: #ba68c8; /* Purple inspired by orchid */
+        border-color: #ba68c8;
+    }
+    .orchid-btn:hover {
+        background-color: #9c27b0;
+        border-color: #9c27b0;
+    }
+    .chrysanthemum-card {
+        background-color: #fffde7; /* Light color inspired by chrysanthemum */
+    }
+    .chrysanthemum-btn {
+        background-color: #fff176; /* Yellow inspired by chrysanthemum */
+        border-color: #fff176;
+    }
+    .chrysanthemum-btn:hover {
+        background-color: #ffee58;
+        border-color: #ffee58;
+    }
+
+    /* Additional card styles for new sections */
+    .mindfulness-card {
+        background-color: #e6f7ff; /* Light color inspired by water lily */
+        border-radius: 8px;
+    }
+    .approach-card {
+        background-color: #f3e5f5; /* Light color inspired by orchid */
+        border-radius: 8px;
     }
 </style>
 {% endblock %}
