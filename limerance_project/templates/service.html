@@ -12,7 +12,7 @@
 
     <!-- Service Packages Section -->
     <div class="mb-5">
-        <h2 class="text-dark">Packages</h2>
+        <h2 class="text-dark text-center py-4">Packages</h2>
         <div class="row">
             <!-- Package 1 -->
             <div class="col-md-4 mb-4">
@@ -55,7 +55,7 @@
 
     <!-- Additional Services Section -->
     <div class="mb-5">
-        <h2 class="text-dark">Additional Services</h2>
+        <h2 class=" text-dark text-center py-4">Additional Services</h2>
         <div class="row">
             <!-- Monthly Process Groups -->
             <div class="col-md-6 mb-4">
@@ -76,8 +76,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Individual Sessions ($200/session)</h5>
                         <p class="card-text">Individual sessions are available for those seeking more personalized support.</p>
-                        <button type="button" class="btn btn-primary chrysanthemum-btn" data-bs-toggle="modal" data-bs-target="#individualSessionModal">Learn More</button>
-                        <a href="{% url 'contact' %}" class="btn btn-secondary chrysanthemum-btn">Interested</a>
+                        <button type="button" class="btn btn-primary chrysanthemum-btn mt-2" data-bs-toggle="modal" data-bs-target="#individualSessionModal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary chrysanthemum-btn mt-2">Interested</a>
                     </div>
                 </div>
             </div>
@@ -184,8 +184,8 @@
     }
     .card-title {
         font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        color: #4a90e2; /* Blue from the color palette */
+        font-weight: 700;
+        color: #77797c; /* Blue from the color palette */
     }
     .card-text {
         font-family: 'Lato', sans-serif;
@@ -260,10 +260,12 @@
     .plumeria-btn {
         background-color: #ffd54f; /* Yellow inspired by plumeria */
         border-color: #ffd54f;
+color:#333;
     }
     .plumeria-btn:hover {
         background-color: #ffc107;
         border-color: #ffc107;
+color:#333;
     }
     .hibiscus-card {
         background-color: #ffe6e6; /* Light color inspired by hibiscus */
@@ -302,12 +304,15 @@
         background-color: #fffde7; /* Light color inspired by chrysanthemum */
     }
     .chrysanthemum-btn {
-        background-color: #fff176; /* Yellow inspired by chrysanthemum */
+        background-color: #fce40b; /* Yellow inspired by chrysanthemum */
         border-color: #fff176;
+color:#333;
+
     }
     .chrysanthemum-btn:hover {
-        background-color: #ffee58;
-        border-color: #ffee58;
+        background-color: #fae522;
+        border-color: #fae73a;
+color:#333;
     }
 
     /* Image Styles */

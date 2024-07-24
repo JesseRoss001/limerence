@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
-
-{% block title %}About Me | Born Free Limerence Coaching{% endblock %}
 {% load static %}
+{% block title %}About Me | Born Free Limerence Coaching{% endblock %}
 {% block content %}
 <!-- Introduction Section -->
 <div class="hero-section text-center d-flex align-items-center justify-content-center">
@@ -34,69 +33,16 @@
     </div>
 </div>
 
-<!-- Professional Experience Section -->
-<div class="container my-5">
-    <h2 class="text-center text-dark mb-4">Professional Experience</h2>
-    <div class="row">
-        <div class="col-md-6">
-            <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle text-primary"></i> 10 years of experience as a therapist.</li>
-                <li><i class="bi bi-check-circle text-primary"></i> Worked in community mental health centers.</li>
-                <li><i class="bi bi-check-circle text-primary"></i> Provided individual therapy through telehealth.</li>
-                <li><i class="bi bi-check-circle text-primary"></i> Experienced with various diagnoses such as OCD, PTSD, ADHD, etc.</li>
-                <li><i class="bi bi-check-circle text-primary"></i> Designed a Mindfulness-Based Cognitive Therapy group.</li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <img src="{% static 'images/professional-placeholder.jpg' %}" class="img-fluid rounded" alt="Professional Experience">
-        </div>
-    </div>
-</div>
-
-<!-- Therapeutic Approaches Section -->
-<div class="container my-5">
-    <h2 class="text-center text-dark mb-4">Therapeutic Approaches</h2>
-    <div class="row text-center">
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 plumeria-card">
-                <div class="card-body">
-                    <i class="bi bi-heart text-primary"></i>
-                    <h5 class="card-title">Dialectical Behavior Therapy</h5>
-                    <p class="card-text">Practical skills to tolerate intense urges and emotions.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 hibiscus-card">
-                <div class="card-body">
-                    <i class="bi bi-heart text-primary"></i>
-                    <h5 class="card-title">Existential Therapy</h5>
-                    <p class="card-text">Exploring purpose and meaning in life.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 orchid-card">
-                <div class="card-body">
-                    <i class="bi bi-heart text-primary"></i>
-                    <h5 class="card-title">Strength-Based Therapy</h5>
-                    <p class="card-text">Focusing on individual strengths to overcome challenges.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Mindfulness and Research Section -->
 <div class="container my-5">
     <h2 class="text-center text-dark mb-4">Mindfulness and Research</h2>
     <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-12">
             <div class="card mindfulness-card p-4">
                 <p class="text-muted">Mindfulness is a central theme throughout my program and has been shown to improve anxiety, depression, immune functioning, mental clarity and focus, sleep, and overall quality of life. In their systematic review on “Meditation Programs for Stress and Well-Being,” Goyal, Singh, Sibinga et al. found that mindfulness meditation programs reduce psychological stress associated with depression and anxiety, to the extent that regular meditation was analogous to using psychotropic medication. In other words, mindfulness has the potential to improve the way we respond to stressors.</p>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-12 text-center">
             <img src="{% static 'images/mindfulness-placeholder.jpg' %}" class="img-fluid rounded" alt="Mindfulness">
         </div>
     </div>
@@ -107,6 +53,7 @@
     <h2 class="text-center text-dark mb-4">My Approach</h2>
     <div class="card approach-card p-4">
         <p class="text-muted">Developing this program has given me the freedom to share parts of my lived experience, which are vital in aiding treatment. In working with me, I have crafted a structured plan to target the depths of limerence. While structured, I invite questions and exploration, which are integral to recovery. Although I am educated and trained in providing psychotherapy, it is also my lived experience which colors my style of care and support. Through suffering, I have acquired seeds of wisdom which I believe will be valuable in our work together.</p>
+        <p class="text-muted">My approach is compassionate and client-centered, focusing on individual strengths and resilience. Together, we will explore your unique experiences and develop strategies to enhance your well-being and overcome the challenges posed by limerence. I believe in the transformative power of personal growth and look forward to supporting you on your journey.</p>
     </div>
 </div>
 
@@ -137,14 +84,14 @@
         content: '';
         position: absolute;
         width: 6px;
-        background-color: #007bff;
+        background-color: #78b7fa;
         top: 0;
         bottom: 0;
         left: 50%;
         margin-left: -3px;
     }
     .timeline-item {
-        padding: 10px 15px;
+        padding: 5px 15px;
         position: relative;
         background: inherit;
         width: 50%;
@@ -156,7 +103,7 @@
         height: 25px;
         right: -17px;
         background-color: white;
-        border: 4px solid #007bff;
+        border: 4px solid #74ace7;
         top: 15px;
         border-radius: 50%;
         z-index: 1;
@@ -175,10 +122,11 @@
     }
     .timeline-item h5 {
         margin: 0 0 10px;
-        color: #007bff;
+        color: #74b5fc;
     }
     .timeline-item p {
         margin: 0;
+        color: #333; /* Darker grey for text */
     }
     /* Card Styles */
     .card {
@@ -192,12 +140,73 @@
     }
     .card-title {
         font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        color: #4a90e2; /* Blue from the color palette */
+        font-weight: 700;
+        color: #77797c; /* Blue from the color palette */
     }
     .card-text {
         font-family: 'Lato', sans-serif;
-        color: #6c757d;
+        color: #333; /* Darker grey for text */
+    }
+
+    /* Container Styles */
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 15px;
+        background-color: #f0f4f8; /* Light grey from the color palette */
+        border-radius: 8px;
+    }
+
+    /* Modal Styles */
+    .modal-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #4a90e2; /* Blue from the color palette */
+    }
+    .modal-body {
+        font-family: 'Lato', sans-serif;
+        color: #333; /* Darker grey for text */
+    }
+
+    /* Button Styles */
+    .btn-primary {
+        background-color: #4a90e2; /* Blue from the color palette */
+        border-color: #4a90e2;
+    }
+    .btn-primary:hover {
+        background-color: #3a78c2;
+        border-color: #3a78c2;
+    }
+    .btn-secondary {
+        background-color: #7ed321; /* Green from the color palette */
+        border-color: #7ed321;
+        color: #ffffff;
+    }
+    .btn-secondary:hover {
+        background-color: #6dbf19;
+        border-color: #6dbf19;
+    }
+
+    /* Typography */
+    h1, h2 {
+        font-family: 'Raleway', sans-serif;
+        color: #212529; /* Dark grey for headers */
+    }
+    p, ul, label {
+        font-family: 'Lato', sans-serif;
+        color: #333; /* Darker grey for body text */
+    }
+    .lead {
+        font-family: 'Nunito', sans-serif;
+        color: #333; /* Darker grey for lead text */
+    }
+
+    /* Additional Styling */
+    .text-dark {
+        color: #212529 !important;
+    }
+    .text-muted {
+        color: #333 !important; /* Darker grey for muted text */
     }
 
     /* Flower-specific styles */
@@ -207,17 +216,20 @@
     .plumeria-btn {
         background-color: #ffd54f; /* Yellow inspired by plumeria */
         border-color: #ffd54f;
+        color: #333;
     }
     .plumeria-btn:hover {
         background-color: #ffc107;
         border-color: #ffc107;
+        color: #333;
     }
     .hibiscus-card {
         background-color: #ffe6e6; /* Light color inspired by hibiscus */
     }
     .hibiscus-btn {
         background-color: #ff6f61; /* Red inspired by hibiscus */
-        border-color: #ff6f61;
+        border-color
+        : #ff6f61;
     }
     .hibiscus-btn:hover {
         background-color: #ff3d00;
@@ -251,10 +263,12 @@
     .chrysanthemum-btn {
         background-color: #fff176; /* Yellow inspired by chrysanthemum */
         border-color: #fff176;
+        color: #333;
     }
     .chrysanthemum-btn:hover {
         background-color: #ffee58;
         border-color: #ffee58;
+        color: #333;
     }
 
     /* Additional card styles for new sections */
