@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'main',  # your existing app
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -48,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'wagtail.contrib.redirects.middleware.RedirectMiddleware',  # Wagtail middleware
-    'pagination.middleware.PaginationMiddleware',
 ]
 
 ROOT_URLCONF = 'limerance_project.urls'
@@ -69,9 +69,6 @@ TEMPLATES = [
         },
     },
 ]
-
-
-
 
 WSGI_APPLICATION = 'limerance_project.wsgi.application'
 
@@ -130,6 +127,5 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-WAGTAILADMIN_BASE_URL = 'http://127.0.0.1:8000'
-# In settings.py
+WAGTAILADMIN_BASE_URL = 'http://127.0.0.1:8000/blog/'
 WAGTAIL_SITE_NAME = 'Limerence Coaching'
