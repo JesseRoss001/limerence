@@ -37,7 +37,7 @@
             margin-right: 10px;
         }
         .navbar-nav {
-            max-width: 1600px;
+            max-width: 1400px;
             margin: auto;
             width: 100%;
         }
@@ -51,10 +51,35 @@
             border-radius: 4px;
         }
         .navbar-toggler {
-            border-color: rgba(0, 0, 0, 0.1);
+            border: none; /* Remove border */
+        }
+        .navbar-toggler:focus, .navbar-toggler:active {
+            outline: none; /* Remove focus outline */
+            box-shadow: none; /* Remove box shadow */
         }
         .navbar-toggler-icon {
-            color: #002147; /* Dark navy blue */
+            width: 30px;
+            height: 2px;
+            background-color: #002147; /* Dark navy blue */
+            display: block;
+            position: relative;
+            transition: all 0.3s;
+        }
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background-color: #002147; /* Dark navy blue */
+            position: absolute;
+            left: 0;
+            transition: all 0.3s;
+        }
+        .navbar-toggler-icon::before {
+            top: -10px;
+        }
+        .navbar-toggler-icon::after {
+            top: 10px;
         }
         .footer {
             background: linear-gradient(to right, #fff7e6, #ffe6e6, #f3e5f5, #e6f7ff);
@@ -113,20 +138,32 @@
                 margin: 5px 0;
             }
         }
+.container-max {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 15px;
+        }
+        .text-dark {
+            color: #333 !important;
+        }
+        .text-muted {
+            color: #6c757d !important;
+        }
+.header-text {font-weight: 500;}
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid container-max">
             <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'images/limerence-logo.png' %}" alt="Logo">
                 <div class="row d-flex d-md-none justify-content-center align-items-center">
-                    <div class="col-12 text-center"> Born Free </div>
-                    <div class="col-12 text-center"> Limerence Coaching </div>
+                    <div class="col-12 text-center header-text"> Born Free </div>
+                    <div class="col-12 text-center header-text"> Limerence Coaching </div>
                 </div>
-                <div class="d-none d-md-flex"> Born Free Limerence Coaching </div>
+                <div class="d-none d-md-flex header-text"> Born Free Limerence Coaching </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler my-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
