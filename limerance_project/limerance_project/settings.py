@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'wagtail.contrib.redirects.middleware.RedirectMiddleware',  # Wagtail middleware
+    'pagination.middleware.PaginationMiddleware',
 ]
 
 ROOT_URLCONF = 'limerance_project.urls'
