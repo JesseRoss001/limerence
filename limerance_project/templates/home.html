@@ -3,15 +3,6 @@
 
 {% block title %}Home | Born Free Limerence Coaching{% endblock %}
 
-{% block extra_hero %}
-<div class="hero-section text-center d-flex align-items-center justify-content-center">
-    <div class="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-        <h1 class="text-dark">Born Free Limerence Coaching</h1>
-        <p class="lead text-muted">Freedom through letting go</p>
-        <a href="#intro" class="btn btn-primary">Get Started</a>
-    </div>
-</div>
-{% endblock %}
 {% block meta %}
 <meta name="description" content="Born Free Limerence Coaching offers professional guidance and support to overcome emotional obsession, unhealthy relationships, and limerence addiction. Serving Hooksett, NH and surrounding areas including Manchester, Bedford, Concord, Nashua, Amherst, Goffstown, Pembroke, Merrimack, Bow, Canterbury, and Epsom.">
 <meta name="keywords" content="Limerence therapist, Emotional obsession help, Relationship obsession counseling, Emotional dependency, Obsession, Effects of limerence, Longing, Limerence treatment, Obsessive love, Love addiction, Limerence and relationships, Limerence syndrome, Limerence addiction, Attachment theory, Anxious attachment, Unhealthy relationships, Emotional dependence, Toxic relationships, Codependency, Stages of limerence, Overcoming limerence, Help for limerence, Limerence support groups, All-consuming love, One-sided love, Uncontrollable feelings, Obsessed with someone, Fantasy love, Hopeless romantic, Desperate love, All-consuming desire, Unhealthy relationship patterns, Can't move on, Love addiction help, Breaking free from obsession, Love obsession help, Healing from heartbreak">
@@ -25,17 +16,26 @@
 <meta name="twitter:description" content="Born Free Limerence Coaching offers professional guidance and support to overcome emotional obsession, unhealthy relationships, and limerence addiction.">
 <meta name="twitter:image" content="{% static 'images/limerence-logo.png' %}">
 {% endblock %}
+{% block extra_hero %}
+<div class="hero-section text-center d-flex align-items-center justify-content-center">
+    <div class="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-dark">Born Free Limerence Coaching</h1>
+        <p class="lead text-muted">Freedom through letting go</p>
+        <a href="#intro" class="btn btn-primary">Get Started</a>
+    </div>
+</div>
+{% endblock %}
 
 {% block content %}
 <!-- Introduction Section -->
 <div id="intro" class="container my-5">
-    <div class="row align-items-center">
+    <div class="row d-flex align-items-center justify-content-center">
         <div class="col-md-6">
             <h2 class="text-dark">Welcome</h2>
             <p class="text-muted">This type of obsession is known as limerence. This state does not follow the usual pattern and timeline for grief, following a break up or the sweetness that accompanies a crush. In fact, this affliction lasts between 18 months and 3 years, on average, yet sometimes it can go on for decades...</p>
         </div>
-        <div class="col-md-6">
-            <img src="{% static 'images/plumeria-flower.jpg' %}" class="img-fluid rounded" alt="Welcome Image">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="{% static 'images/sub-hero-image.jpg' %}" class="img-fluid rounded" alt="Welcome Image">
         </div>
     </div>
 </div>
@@ -46,11 +46,11 @@
     <div class="row text-center">
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100 plumeria-card">
-                <img src="{% static 'images/plumeria-flower.jpg' %}" class="card-img-top" alt="About Us">
+                <img src="{% static 'images/about-image-hero.jpg' %}" class="card-img-top" alt="About Us">
                 <div class="card-body">
                     <h5 class="card-title">About</h5>
                     <p class="card-text">Learn more about our mission and approach.</p>
-                    <a href="{% url 'about' %}" class="btn btn-primary plumeria-btn">Learn More</a>
+                    <a href="{% url 'about' %}" class="btn btn-primary plumeria-btn text-dark">Learn More</a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100 orchid-card">
-                <img src="{% static 'images/orchid.jpg' %}" class="card-img-top" alt="Contact Us">
+                <img src="{% static 'images/contact-image.jpg' %}" class="card-img-top" alt="Contact Us">
                 <div class="card-body">
                     <h5 class="card-title">Contact</h5>
                     <p class="card-text">Get in touch with us for more information.</p>
@@ -76,7 +76,7 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100 water-lily-card">
-                <img src="{% static 'images/water-lily-flower.jpg' %}" class="card-img-top" alt="Blog">
+                <img src="{% static 'images/blog-image.jpg' %}" class="card-img-top" alt="Blog">
                 <div class="card-body">
                     <h5 class="card-title">Blog</h5>
                     <p class="card-text">Read our latest articles and insights.</p>
