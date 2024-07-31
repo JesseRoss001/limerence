@@ -1,0 +1,291 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Other Services | Born Free, Relationship & Dating Coaching{% endblock %}
+
+{% block meta %}
+<meta name="description" content="Explore the range of services offered by Born Free Coaching, including Relationship and Dating Coaching to help you build healthier, more fulfilling connections. Serving Hooksett, NH, and surrounding areas.">
+<meta name="keywords" content="Relationship coaching services, Dating coaching, Relationship improvement, Emotional intimacy, Trust building, Communication coaching, Boundary setting, Dating strategy, Hooksett NH, Manchester, Bedford, Concord, Nashua, Amherst, Goffstown, Pembroke, Merrimack, Bow, Canterbury, Epsom">
+<meta name="author" content="Clean Design UK">
+<meta property="og:title" content="Other Services - Born Free Coaching">
+<meta property="og:description" content="Explore the range of services offered by Born Free Coaching, including Relationship and Dating Coaching to help you build healthier, more fulfilling connections.">
+<meta property="og:image" content="{% static 'images/relationship-coaching.png' %}">
+<meta property="og:url" content="https://www.bornfreelimerencecoaching.com/other-services">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Other Services - Born Free Coaching">
+<meta name="twitter:description" content="Explore the range of services offered by Born Free Coaching, including Relationship and Dating Coaching to help you build healthier, more fulfilling connections.">
+<meta name="twitter:image" content="{% static 'images/relationship-coaching.png' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container pt-5 pb-5">
+    <!-- Header Section -->
+    <div class="text-center mb-4">
+        <h1 class="text-dark mb-3">Relationship & Dating Coaching</h1>
+        <p class="lead text-muted">Discover how our coaching services can help you build stronger, more meaningful relationships.</p>
+    </div>
+
+    <!-- Service Packages Section -->
+    <div class="mb-5">
+        <h2 class="text-dark text-center py-4">Packages</h2>
+        <div class="row">
+            <!-- Package 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 new-card">
+                    <img src="{% static 'images/relationship-coaching-1.jpg' %}" class="card-img-top" alt="Package 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Relationship Package ($150/session)</h5>
+                        <p class="card-text">4 weeks of focused relationship coaching.</p>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package1Modal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary new-button mt-2">Interested</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Package 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 new-card">
+                    <img src="{% static 'images/relationship-coaching-2.jpg' %}" class="card-img-top" alt="Package 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced Relationship Package ($140/session)</h5>
+                        <p class="card-text">8 weeks of in-depth relationship coaching.</p>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package2Modal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary new-button mt-2">Interested</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Package 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 new-card">
+                    <img src="{% static 'images/relationship-coaching-3.jpg' %}" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Comprehensive Dating Package ($130/session)</h5>
+                        <p class="card-text">12 weeks of coaching to transform your dating life.</p>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package3Modal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary new-button mt-2">Interested</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Services Section -->
+    <div class="mb-5">
+        <h2 class="text-dark text-center py-4">Additional Coaching Services</h2>
+        <div class="row">
+            <!-- One-on-One Sessions -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 new-card">
+                    <img src="{% static 'images/relationship-coaching-4.jpg' %}" class="card-img-top" alt="One-on-One">
+                    <div class="card-body">
+                        <h5 class="card-title">One-on-One Sessions ($180/session)</h5>
+                        <p class="card-text">Personalized sessions to address specific challenges.</p>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#oneOnOneModal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary new-button mt-2">Interested</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Group Coaching -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 new-card">
+                    <img src="{% static 'images/relationship-coaching-5.jpg' %}" class="card-img-top" alt="Group Coaching">
+                    <div class="card-body">
+                        <h5 class="card-title">Group Coaching ($100/session)</h5>
+                        <p class="card-text">Join a group to learn and grow together.</p>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#groupCoachingModal">Learn More</button>
+                        <a href="{% url 'contact' %}" class="btn btn-secondary new-button mt-2">Interested</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modals for Package Details -->
+<div class="modal fade" id="package1Modal" tabindex="-1" aria-labelledby="package1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="package1ModalLabel">Basic Relationship Package ($150/session)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>4 weeks of coaching focused on improving communication, building trust, and setting boundaries in your relationship.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Interested</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="package2Modal" tabindex="-1" aria-labelledby="package2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="package2ModalLabel">Advanced Relationship Package ($140/session)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>8 weeks of comprehensive coaching to dive deeper into emotional intimacy, sexual intimacy, and conflict resolution.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Interested</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="package3Modal" tabindex="-1" aria-labelledby="package3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="package3ModalLabel">Comprehensive Dating Package ($130/session)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>12 weeks of intensive coaching designed to transform your dating life, improve confidence, and enhance your interpersonal skills.</p>
+                  </div>
+            <div class="modal-footer">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Interested</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="oneOnOneModal" tabindex="-1" aria-labelledby="oneOnOneModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="oneOnOneModalLabel">One-on-One Sessions ($180/session)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Personalized one-on-one coaching sessions designed to address your unique relationship challenges, whether you're dealing with communication issues, trust, or other concerns.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Interested</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="groupCoachingModal" tabindex="-1" aria-labelledby="groupCoachingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="groupCoachingModalLabel">Group Coaching ($100/session)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Join a supportive group environment where you can learn and grow alongside others facing similar relationship challenges. These sessions provide a collaborative approach to building better relationships.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Interested</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Card Styles */
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        background-color: #ffffff;
+    }
+    .card:hover {
+        transform: scale(1.02);
+    }
+    .card-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: #212529;
+    }
+    .card-text {
+        font-family: 'Lato', sans-serif;
+        color: #6c757d;
+    }
+
+    /* Container Styles */
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 15px;
+        background-color: #f7f9fc;
+        border-radius: 8px;
+    }
+
+    /* Modal Styles */
+    .modal-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #007bff;
+    }
+    .modal-body {
+        font-family: 'Lato', sans-serif;
+        color: #6c757d;
+    }
+
+    /* Button Styles */
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #ffffff;
+    }
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+
+    /* Typography */
+    h1, h2 {
+        font-family: 'Raleway', sans-serif;
+        color: #212529;
+    }
+    p, ul, label {
+        font-family: 'Lato', sans-serif;
+        color: #6c757d;
+    }
+    .lead {
+        font-family: 'Nunito', sans-serif;
+        color: #6c757d;
+    }
+
+    /* Additional Styling */
+    .text-dark {
+        color: #212529 !important;
+    }
+    .text-muted {
+        color: #6c757d !important;
+    }
+
+    /* Custom Styles for New Card and Button */
+    .new-card {
+        background-color: #e3f2fd; /* Light blue inspired by the theme */
+    }
+    .new-button {
+        background-color: #1e88e5; /* Blue inspired by the theme */
+        border-color: #1e88e5;
+        color: #ffffff;
+    }
+    .new-button:hover {
+        background-color: #1565c0; /* Darker blue on hover */
+        border-color: #0d47a1;
+    }
+
+    /* Image Styles */
+    .card-img-top {
+        height: 200px; /* Ensuring all images have the same height */
+        object-fit: cover; /* Ensuring no image stretching */
+    }
+</style>
+{% endblock %}

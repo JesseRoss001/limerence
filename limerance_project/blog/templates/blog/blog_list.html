@@ -14,11 +14,11 @@
 
 {% block content %}
 <div id="blog-intro" class="container py-5  mx-auto">
-<h2 class="text-dark text-center py-5">Welcome to Our Blog</h2>
+<h2 class="text-dark text-center py-3">Welcome to Our Blog</h2>
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-6 px-1 px-md-3 px-lg-5">
             
-            <p class="text-muted">Dive into a collection of articles, tips, and personal stories that provide insights and
+            <p class="text-muted intro-text py-2">Dive into a collection of articles, tips, and personal stories that provide insights and
                 guidance on overcoming emotional obsession, unhealthy relationships, and limerence addiction. Our blog aims to
                 offer support and inspiration as you embark on your journey to freedom.</p>
         </div>
@@ -53,6 +53,7 @@
 </div>
 
 <style>
+.blog-intro {max-width: 1400px;}
     .hero-section {
         background: url('{% static 'images/blog-hero-image.jpg' %}') no-repeat center center/cover;
         min-height: 70vh;
@@ -80,6 +81,7 @@
         font-family: 'Lato', sans-serif;
         color: #6c757d;
     }
+.intro-text {font-size: 1.1em;}
 
     /* Container Styles */
     .container {

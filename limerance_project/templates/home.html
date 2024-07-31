@@ -19,8 +19,11 @@
 {% block extra_hero %}
 <div class="hero-section text-center d-flex align-items-center justify-content-center">
     <div class="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-        <h1 class="text-dark">Born Free Limerence Coaching</h1>
-        <p class="lead text-muted">Freedom through letting go</p>
+        <h1 class="text-dark mb-3">Born Free</h1>
+        <p class="lead text-dark mb-4 m-1 p-1">Limerence & Relationship Coaching</p>
+        <p class="text-dark mb-4 m-1 p-1">
+            <small>Limerence / Relationships / Dating / Emotional Intimacy / Boundaries / Mindfulness</small>
+        </p>
         <a href="#intro" class="btn btn-primary">Get Started</a>
     </div>
 </div>
@@ -28,23 +31,33 @@
 
 {% block content %}
 <!-- Introduction Section -->
-<div id="intro" class="container my-5">
-    <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-md-6">
-            <h2 class="text-dark">Welcome</h2>
-            <p class="text-muted">This type of obsession is known as limerence. This state does not follow the usual pattern and timeline for grief, following a break up or the sweetness that accompanies a crush. In fact, this affliction lasts between 18 months and 3 years, on average, yet sometimes it can go on for decades...</p>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <img src="{% static 'images/sub-hero-image.jpg' %}" class="img-fluid rounded" alt="Welcome Image">
-        </div>
-    </div>
-</div>
+
 
 <!-- Navigation to Other Pages -->
 <div id="navigation" class="container my-5">
     <h2 class="text-center text-dark mb-4">Explore Our Site</h2>
     <div class="row text-center">
-        <div class="col-md-6 col-lg-3 mb-4">
+       <div class="col-md-6 col-lg-6 mb-4">
+            <div class="card h-100 hibiscus-card">
+                <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top card-img-top-height" alt="Services">
+                <div class="card-body">
+                    <h5 class="card-title">Limerence Coaching </h5>
+                    <p class="card-text">Discover our limerence services.</p>
+                    <a href="{% url 'services' %}" class="btn btn-primary hibiscus-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+       <div class="col-md-6 col-lg-6 mb-4">
+            <div class="card h-100 new-card">
+                <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top card-img-top-height" alt="Services">
+                <div class="card-body">
+                    <h5 class="card-title"> Relationship and Dating  Coaching </h5>
+                    <p class="card-text"> Take a look at our relationship focused services on offer.</p>
+                    <a href="{% url 'other_services' %}" class="btn btn-primary new-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 plumeria-card">
                 <img src="{% static 'images/about-image-hero.jpg' %}" class="card-img-top" alt="About Us">
                 <div class="card-body">
@@ -54,17 +67,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 hibiscus-card">
-                <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top" alt="Services">
-                <div class="card-body">
-                    <h5 class="card-title">Services</h5>
-                    <p class="card-text">Discover the packages and services we offer.</p>
-                    <a href="{% url 'services' %}" class="btn btn-primary hibiscus-btn">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
+ 
+        <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 orchid-card">
                 <img src="{% static 'images/contact-image.jpg' %}" class="card-img-top" alt="Contact Us">
                 <div class="card-body">
@@ -74,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4">
+        <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 water-lily-card">
                 <img src="{% static 'images/blog-image.jpg' %}" class="card-img-top" alt="Blog">
                 <div class="card-body">
@@ -308,12 +312,28 @@
         background-color: #ffee58;
         border-color: #ffee58;
     }
+.new-card {
+    background-color: #e3f2fd; /* Light blue inspired by the theme */
+}
+
+.new-button {
+    background-color: #1e88e5; /* Blue inspired by the theme */
+    border-color: #1e88e5;
+    color: #ffffff; /* Ensure the text is white */
+}
+
+.new-button:hover {
+    background-color: #1565c0; /* Darker blue on hover */
+    border-color: #0d47a1;
+}
 
     /* Image Styles */
     .card-img-top {
         height: 200px; /* Ensuring all images have the same height */
         object-fit: cover; /* Ensuring no image stretching */
     }
+
+.card-img-top-height { height:300px !important;}
 
     /* Hero Section Styles */
     .hero-section {
