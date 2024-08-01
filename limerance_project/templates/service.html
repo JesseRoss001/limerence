@@ -20,6 +20,11 @@
     <div class="text-center mb-4">
         <h1 class="text-dark mb-3">Limerence  Services</h1>
         <p class="lead text-muted">Explore the different ways we can help you on your journey to overcoming limerence.</p>
+<hr>
+<p class="lead text-muted"> Click the button below to view  great resources on limerence.</p>
+        <button type="button" class="btn btn-info  top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#infoModal">
+            Limerence Sources
+        </button>
     </div>
 
     <!-- Service Packages Section -->
@@ -182,7 +187,28 @@
         </div>
     </div>
 </div>
-
+<!-- Info Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoModalLabel">Limerence Resources</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li><a href="https://www.livingwithlimerence.com" target="_blank">Living With Limerence by Dr. L (Website)</a></li>
+                    <li><a href="https://www.amazon.com/Limerent-Mind-Permanently-Limerence-Shine/dp/B08C961BVC/ref=pd_lpo_sccl_2/142-6124788-5568730?pd_rd_w=mLtt9&content-id=amzn1.sym.4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_p=4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_r=S6R4B4H49HTDXQHTR4VX&pd_rd_wg=LLp8J&pd_rd_r=e67a5e99-a332-4333-aa79-9d6122802929&pd_rd_i=B08C961BVC&psc=1" target="_blank">Living With Limerence by Lucy Bain (Book)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ga4VHjKkv70&list=PLl504D3b_OPhL2U5T5rxS7O_d_q5JKyfH" target="_blank">“Crappy Childhood Fairy” — YouTube Channel</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Fvi9pDnIxb4" target="_blank">Patrick Teahan — YouTube Channel</a></li>
+                    <li><a href="https://www.eckharttolle.com/a-new-earth/" target="_blank">A New Earth by Eckhart Tolle</a></li>
+                    <li><a href="https://jonkabat-zinn.com/offerings/books/" target="_blank">Wherever You Go, There You Are by Jon Kabat-Zinn</a></li>
+                    <li><a href="https://www.ucsd.edu/mindfulness" target="_blank">UCSD Center for Mindfulness (Guided Meditations)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <style>
     /* Card Styles */
     .card {
@@ -264,6 +290,8 @@
     .text-muted {
         color: #6c757d !important;
     }
+.btn-info {border-color: #f15244;
+background-color: #ff6f61;}
 
     /* Flower-specific styles */
     .plumeria-card {

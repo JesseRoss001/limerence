@@ -19,12 +19,10 @@
 {% block extra_hero %}
 <div class="hero-section text-center d-flex align-items-center justify-content-center">
     <div class="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-        <h1 class="text-dark mb-3">Born Free</h1>
-        <p class="lead text-dark mb-4 m-1 p-1">Limerence & Relationship Coaching</p>
-        <p class="text-dark mb-4 m-1 p-1">
-            <small>Limerence / Relationships / Dating / Emotional Intimacy / Boundaries / Mindfulness</small>
-        </p>
-        <a href="#intro" class="btn btn-primary">Get Started</a>
+        <h1 class="text-dark mb-3">Born Free Limerence & <hr> Relationship Coaching</h1>
+        <p class="lead text-dark mb-4">Guiding you to healthier, more fulfilling relationships.</p>
+        
+        <button type="button" class="btn  btn-lg" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal">Learn More</button>
     </div>
 </div>
 {% endblock %}
@@ -43,17 +41,20 @@
                 <div class="card-body">
                     <h5 class="card-title">Limerence Coaching </h5>
                     <p class="card-text">Discover our limerence services.</p>
-                    <a href="{% url 'services' %}" class="btn btn-primary hibiscus-btn">Learn More</a>
+                    <button type="button" class="btn btn-info position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#infoModal">
+                        i
+                    </button>
+                    <a href="{% url 'services' %}" class="btn btn-primary hibiscus-btn">Get Started Today</a>
                 </div>
             </div>
         </div>
        <div class="col-md-6 col-lg-6 mb-4">
             <div class="card h-100 new-card">
-                <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top card-img-top-height" alt="Services">
+                <img src="{% static 'images/relationship-coaching-1.jpg' %}" class="card-img-top card-img-top-height" alt="Services">
                 <div class="card-body">
                     <h5 class="card-title"> Relationship and Dating  Coaching </h5>
                     <p class="card-text"> Take a look at our relationship focused services on offer.</p>
-                    <a href="{% url 'other_services' %}" class="btn btn-primary new-button">Learn More</a>
+                    <a href="{% url 'other_services' %}" class="btn btn-primary new-button">Explore Our Services</a>
                 </div>
             </div>
         </div>
@@ -74,7 +75,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Contact</h5>
                     <p class="card-text">Get in touch with us for more information.</p>
-                    <a href="{% url 'contact' %}" class="btn btn-primary orchid-btn">Learn More</a>
+                    <a href="{% url 'contact' %}" class="btn btn-primary orchid-btn">Start Your Healing Journey</a>
                 </div>
             </div>
         </div>
@@ -84,7 +85,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Blog</h5>
                     <p class="card-text">Read our latest articles and insights.</p>
-                    <a href="{% url 'blog_list' %}" class="btn btn-primary water-lily-btn">Learn More</a>
+                    <a href="{% url 'blog_list' %}" class="btn btn-primary water-lily-btn">Get Instant Access</a>
                 </div>
             </div>
         </div>
@@ -166,7 +167,58 @@
     <p class="text-muted">Contact us today to learn more or to book a session.</p>
     <a href="{% url 'contact' %}" class="btn btn-primary">Get in Touch</a>
 </div>
-
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoModalLabel">Limerence Resources</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li><a href="https://www.livingwithlimerence.com" target="_blank">Living With Limerence by Dr. L (Website)</a></li>
+                    <li><a href="https://www.amazon.com/Limerent-Mind-Permanently-Limerence-Shine/dp/B08C961BVC/ref=pd_lpo_sccl_2/142-6124788-5568730?pd_rd_w=mLtt9&content-id=amzn1.sym.4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_p=4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_r=S6R4B4H49HTDXQHTR4VX&pd_rd_wg=LLp8J&pd_rd_r=e67a5e99-a332-4333-aa79-9d6122802929&pd_rd_i=B08C961BVC&psc=1" target="_blank">Living With Limerence by Lucy Bain (Book)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ga4VHjKkv70&list=PLl504D3b_OPhL2U5T5rxS7O_d_q5JKyfH" target="_blank">“Crappy Childhood Fairy” — YouTube Channel</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Fvi9pDnIxb4" target="_blank">Patrick Teahan — YouTube Channel</a></li>
+                    <li><a href="https://www.eckharttolle.com/a-new-earth/" target="_blank">A New Earth by Eckhart Tolle</a></li>
+                    <li><a href="https://jonkabat-zinn.com/offerings/books/" target="_blank">Wherever You Go, There You Are by Jon Kabat-Zinn</a></li>
+                    <li><a href="https://www.ucsd.edu/mindfulness" target="_blank">UCSD Center for Mindfulness (Guided Meditations)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service Details Modal -->
+<div class="modal fade" id="serviceDetailsModal" tabindex="-1" aria-labelledby="serviceDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content p-4">
+            <div class="modal-header border-0 mb-3">
+                <h5 class="modal-title text-dark" id="serviceDetailsModalLabel">Our Coaching Services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="text-dark mb-3">Relationship & Dating Coaching</h6>
+                        <p class="text-muted">I work with individuals and couples to improve communication, emotional intimacy, and trust. We focus on building confidence, setting goals, and managing boundaries to foster healthier, more secure relationships.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-dark mb-3">Limerence Coaching</h6>
+                        <p class="text-muted">Specializing in limerence, I help individuals manage obsessive thoughts and behaviors tied to unrequited love. Through mindfulness, value-based living, and self-compassion, we work towards relief and a purposeful life.</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6 class="text-dark mb-3">Why Choose Us?</h6>
+                    <p class="text-muted">We provide a compassionate, presence-filled approach to coaching. With a focus on real-time communication improvements and practical assignments, we help you create more secure, trusting, and loving relationships.</p>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <style>
     /* Card Styles */
     .card {
@@ -197,6 +249,9 @@
         background-color: #f0f4f8; /* Light grey from the color palette */
         border-radius: 8px;
     }
+
+.btn-info {border-color: #f15244;
+background-color: #ff6f61;}
 
     /* Modal Styles */
     .modal-title {
@@ -334,6 +389,8 @@
     }
 
 .card-img-top-height { height:300px !important;}
+
+@media screen and (min-width: 1023.1px) { .card-img-top-height { height:400px !important;}}
 
     /* Hero Section Styles */
     .hero-section {
