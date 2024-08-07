@@ -78,8 +78,11 @@ WSGI_APPLICATION = 'limerance_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(
+        default='postgresql://postgres:QINfFVnJudfmtntWuElyXjASdlQEEleS@monorail.proxy.rlwy.net:31563/railway'
+    )
 }
 
 # Password validation
