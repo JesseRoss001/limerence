@@ -2,6 +2,7 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
+<link href="{% static 'css/blog1.css' %}" rel="stylesheet">
 <article class="blog-post-container container py-5">
     <div class="row justify-content-center">
         <div class="col-md-10">
@@ -13,40 +14,4 @@
     </div>
 </article>
 
-<style>
-    .blog-post-container {
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 30px;
-        margin-top: 30px;
-    }
-
-    .blog-post-title {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        color: #212529;
-    }
-
-    .blog-post-date {
-        font-family: 'Lato', sans-serif;
-        color: #6c757d;
-    }
-
-    .blog-post-intro, .blog-post-body {
-        font-family: 'Lato', sans-serif;
-        color: #6c757d;
-        line-height: 1.6;
-    }
-
-    .blog-post-intro {
-        font-size: 1.2em;
-    }
-
-    .blog-post-body {
-        font-size: 1em;
-    }
-
-    /* Add any additional styling here */
-</style>
 {% endblock %}

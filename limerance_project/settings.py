@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-%=$*h!+8%6=)kq@b8r03c51cww1w(w_$1g0!%9)d(ef$tni56r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','https://limerence-e7ab9fc20b00.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -60,7 +60,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates'],
-        'APP_DIRS': True,
+        'APP_DIRS': False,  # Using custom loaders for performance
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -69,19 +69,51 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'wagtail.contrib.settings.context_processors.settings',
             ],
+            'loaders': [
+                ('django.template.loaders.cached.Loader', [
+                    'django.template.loaders.filesystem.Loader',
+                    'django.template.loaders.app_directories.Loader',
+                ]),
+            ],
         },
     },
 ]
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache'),
+    }
+}
+
+
+# SSL/HTTPS settings
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True  # Redirect all HTTP requests to HTTPS in production
+    SECURE_HSTS_SECONDS = 3600  # Use HSTS to enforce HTTPS for a year
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+else:
+    SECURE_SSL_REDIRECT = False  # Disable SSL redirect for local development
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 WSGI_APPLICATION = 'limerance_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379/1',  # Make sure Redis is running at this location
+    }
+}
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postgres:QINfFVnJudfmtntWuElyXjASdlQEEleS@monorail.proxy.rlwy.net:31563/railway'
+        default='postgresql://postgres:QINfFVnJudfmtntWuElyXjASdlQEEleS@monorail.proxy.rlwy.net:31563/railway',
+        conn_max_age=600,  # Keep connections alive for 10 minutes
     )
 }
 
@@ -116,6 +148,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
+SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'  # Use cache-backed sessions
+
+
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]

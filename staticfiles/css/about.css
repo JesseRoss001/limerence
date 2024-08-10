@@ -1,0 +1,223 @@
+
+    .hero-section {
+        background: url('{% static 'images/about-image-hero.jpg' %}') no-repeat center center/cover;
+        min-height: 50vh;
+        position: relative;
+    }
+    .overlay {
+        background: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: #78b7fa;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    .timeline-item {
+        padding: 5px 15px;
+        position: relative;
+        background: inherit;
+        width: 50%;
+    }
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #74ace7;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .timeline-item:nth-child(odd) {
+        left: 50%;
+    }
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    .timeline-item:nth-child(odd)::after {
+        left: -16px;
+    }
+    .timeline-item:nth-child(even)::after {
+        right: -16px;
+    }
+    .timeline-item h5 {
+        margin: 0 0 10px;
+        color: #74b5fc;
+    }
+    .timeline-item p {
+        margin: 0;
+        color: #333; /* Darker grey for text */
+    }
+    /* Card Styles */
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        background-color: #ffffff;
+    }
+    .card:hover {
+        transform: scale(1.02);
+    }
+    .card-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: #77797c; /* Blue from the color palette */
+    }
+    .card-text {
+        font-family: 'Lato', sans-serif;
+        color: #333; /* Darker grey for text */
+    }
+
+    /* Container Styles */
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 15px;
+        background-color: #f0f4f8; /* Light grey from the color palette */
+        border-radius: 8px;
+    }
+
+    /* Modal Styles */
+    .modal-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #4a90e2; /* Blue from the color palette */
+    }
+    .modal-body {
+        font-family: 'Lato', sans-serif;
+        color: #333; /* Darker grey for text */
+    }
+
+    /* Button Styles */
+    .btn-primary {
+        background-color: #4a90e2; /* Blue from the color palette */
+        border-color: #4a90e2;
+    }
+    .btn-primary:hover {
+        background-color: #3a78c2;
+        border-color: #3a78c2;
+    }
+    .btn-secondary {
+        background-color: #7ed321; /* Green from the color palette */
+        border-color: #7ed321;
+        color: #ffffff;
+    }
+    .btn-secondary:hover {
+        background-color: #6dbf19;
+        border-color: #6dbf19;
+    }
+
+    /* Typography */
+    h1, h2 {
+        font-family: 'Raleway', sans-serif;
+        color: #212529; /* Dark grey for headers */
+    }
+    p, ul, label {
+        font-family: 'Lato', sans-serif;
+        color: #333; /* Darker grey for body text */
+    }
+    .lead {
+        font-family: 'Nunito', sans-serif;
+        color: #333; /* Darker grey for lead text */
+    }
+
+    /* Additional Styling */
+    .text-dark {
+        color: #212529 !important;
+    }
+    .text-muted {
+        color: #333 !important; /* Darker grey for muted text */
+    }
+
+    /* Flower-specific styles */
+    .plumeria-card {
+        background-color: #fff7e6; /* Light color inspired by plumeria */
+    }
+    .plumeria-btn {
+        background-color: #ffd54f; /* Yellow inspired by plumeria */
+        border-color: #ffd54f;
+        color: #333;
+    }
+    .plumeria-btn:hover {
+        background-color: #ffc107;
+        border-color: #ffc107;
+        color: #333;
+    }
+    .hibiscus-card {
+        background-color: #ffe6e6; /* Light color inspired by hibiscus */
+    }
+    .hibiscus-btn {
+        background-color: #ff6f61; /* Red inspired by hibiscus */
+        border-color
+        : #ff6f61;
+    }
+    .hibiscus-btn:hover {
+        background-color: #ff3d00;
+        border-color: #ff3d00;
+    }
+    .water-lily-card {
+        background-color: #e6f7ff; /* Light color inspired by water lily */
+    }
+    .water-lily-btn {
+        background-color: #29b6f6; /* Blue inspired by water lily */
+        border-color: #29b6f6;
+    }
+    .water-lily-btn:hover {
+        background-color: #0288d1;
+        border-color: #0288d1;
+    }
+    .orchid-card {
+        background-color: #f3e5f5; /* Light color inspired by orchid */
+    }
+    .orchid-btn {
+        background-color: #ba68c8; /* Purple inspired by orchid */
+        border-color: #ba68c8;
+    }
+    .orchid-btn:hover {
+        background-color: #9c27b0;
+        border-color: #9c27b0;
+    }
+    .chrysanthemum-card {
+        background-color: #fffde7; /* Light color inspired by chrysanthemum */
+    }
+    .chrysanthemum-btn {
+        background-color: #fff176; /* Yellow inspired by chrysanthemum */
+        border-color: #fff176;
+        color: #333;
+    }
+    .chrysanthemum-btn:hover {
+        background-color: #ffee58;
+        border-color: #ffee58;
+        color: #333;
+    }
+
+    /* Additional card styles for new sections */
+    .mindfulness-card {
+        background-color: #e6f7ff; /* Light color inspired by water lily */
+        border-radius: 8px;
+    }
+    .approach-card {
+        background-color: #f3e5f5; /* Light color inspired by orchid */
+        border-radius: 8px;
+    }

@@ -1,0 +1,129 @@
+
+
+.blog-intro {max-width: 1400px;
+background-color: #fafafa;}
+    .hero-section {
+        background: url('/static/images/blog-hero-image.jpg') no-repeat center center/cover;
+        min-height: 70vh;
+        position: relative;
+    }
+    /* Card Styles */
+    /* Regular Card Style */
+/* Card Style 1 */
+.color1-card {
+    background-color: #fcdcf7; /* Light grey */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.color1-card:hover {
+    transform: scale(1.02);
+}
+
+/* Card Style 2 */
+.color2-card {
+    background-color: #e6f7ff; /* Light blue */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.color2-card:hover {
+    transform: scale(1.02);
+}
+
+/* Card Style 3 */
+.color3-card {
+    background-color: #fff7e6; /* Light yellow */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.color3-card:hover {
+    transform: scale(1.02);
+}
+
+/* Card Style 4 */
+.color4-card {
+    background-color: #f3e5f5; /* Light pink */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.color4-card:hover {
+    transform: scale(1.02);
+}
+
+.card-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #4a90e2;
+}
+
+.card-text {
+    font-family: 'Lato', sans-serif;
+    color: #6c757d;
+}
+
+.intro-text {
+    font-size: 1.1em;
+}
+
+/* Additional Styling */
+.container {
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 15px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+}
+
+.btn-primary:hover {
+    background-color: #3a78c2;
+    border-color: #3a78c2;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #212529;
+}
+
+p, ul, label {
+    font-family: 'Lato', sans-serif;
+    color: #6c757d;
+}
+
+.lead {
+    font-family: 'Nunito', sans-serif;
+    color: #6c757d;
+}
+
+.text-dark {
+    color: #212529 !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

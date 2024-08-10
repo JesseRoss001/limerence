@@ -13,8 +13,10 @@
 <meta name="twitter:title" content="Contact Us - Born Free Limerence Coaching">
 <meta name="twitter:description" content="Contact Born Free Limerence Coaching for professional guidance and support in overcoming emotional obsession and unhealthy relationships. Located in Hooksett, NH.">
 <meta name="twitter:image" content="{% static 'images/limerence-logo.png' %}">
+
 {% endblock %}
 {% block content %}
+<link href="{% static 'css/contact.css' %}" rel="stylesheet">
 <div class="container mt-5 mb-5 py-3">
     <div class="text-center mb-5 text-intro-container mx-auto">
         <h1 class="text-dark mb-3">Get in Touch with Born Free, Limerence Coaching</h1>
@@ -74,102 +76,6 @@
     </div>
 </div>
 
-<style>
-    body {
-        font-family: 'Lato', sans-serif;
-        background-color: #f8f9fa;
-        color: #212529;
-    }
-    h1, h2 {
-        font-family: 'Raleway', sans-serif;
-    }
-    .lead {
-        font-family: 'Nunito', sans-serif;
-    }
-    .container {
-        max-width: 1400px;
-        margin: auto;
-        padding: 0 15px;
-    }
-    .text-dark {
-        color: #333 !important;
-    }
-    .text-muted {
-        color: #6c757d !important;
-    }
-.contact-info {
-        max-width: 800px;
-    }
-.text-intro-container {
-        max-width: 900px;
-    }
-    .contact-info ul {
-        padding: 0;
-        list-style: none;
-    }
-    .contact-info ul li {
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
-    .contact-link {
-        color: #666;
-        text-decoration: none;
-    }
-    .contact-link:hover {
-        text-decoration: underline;
-    }
-.contact-form  {max-width: 800px;}
-    .form-label {
-        font-weight: bold;
-        font-size: 1rem;
-    }
-    .form-control {
-        border-radius: 0.25rem;
-        box-shadow: none;
-        border: 1px solid #ced4da;
-        padding: 0.75rem;
-        font-size: 1rem;
-    }
-    .form-control:focus {
-        border-color: #007bff;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    }
-    .btn-primary {
-        background-color: #5aaaff;
-        border-color: #007bff;
-        padding: 0.75rem 1.5rem;
-        font-size: 1.1rem;
-    }
-    .btn-primary:hover {
-        background-color: #0056b3;
-        border-color: #004085;
-    }
-    .card {
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s;
-        background-color: #ffffff;
-    }
-    .card:hover {
-        transform: scale(1.02);
-    }
-    .card-title {
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        color: #4a90e2; /* Blue from the color palette */
-    }
-    .card-text {
-        font-family: 'Lato', sans-serif;
-        color: #6c757d;
-    }
 
-    /* Flower-specific styles */
-    .plumeria-card {
-        background-color: #fff7e6; /* Light color inspired by plumeria */
-    }
-    .orchid-card {
-        background-color: #f3e5f5; /* Light color inspired by orchid */
-    }
-</style>
 
 {% endblock %}
