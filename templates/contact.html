@@ -49,31 +49,31 @@
     </div>
     </div>
 
-    <div class="contact-form px-1 px-md-2 mx-auto py-5 card orchid-card">
-        <h2 class="text-dark text-center py-2">Send Me a Message</h2>
-        <form action="" method="post" class="row g-3 px-2 px-md-4 px-lg-5">
-            {% csrf_token %}
-            <div class="col-md-6">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="col-md-6">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="phone" name="phone" required>
-            </div>
-            <div class="col-12">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary mt-3">Send Message</button>
-            </div>
-        </form>
-    </div>
+<div class="contact-form px-1 px-md-2 mx-auto py-5 card orchid-card">
+    <h2 class="text-dark text-center py-2">Send Me a Message</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" class="row g-3 px-2 px-md-4 px-lg-5">
+        <input type="hidden" name="access_key" value="4f049c54-66cb-4416-b199-aa4caa870bb1">
+        {% csrf_token %}
+        <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-md-6">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+        </div>
+    </form>
 </div>
 
 
