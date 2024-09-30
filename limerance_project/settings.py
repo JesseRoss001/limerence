@@ -105,10 +105,11 @@ WSGI_APPLICATION = 'limerance_project.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379/1',  # Make sure Redis is running at this location
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache'),
     }
 }
+
 
 DATABASES = {
     'default': dj_database_url.config(
