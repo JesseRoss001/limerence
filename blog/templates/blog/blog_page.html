@@ -2,6 +2,10 @@
 {% load wagtailcore_tags %}
 {% load static %}
 
+{% block meta %}
+<title>{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ page.title }}{% endif %}</title>
+<meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ page.intro }}{% endif %}">
+{% endblock %}
 
 {% block content %}
 <link href="{% static 'css/blog1.css' %}" rel="stylesheet">
@@ -15,5 +19,4 @@
         </div>
     </div>
 </article>
-
 {% endblock %}
