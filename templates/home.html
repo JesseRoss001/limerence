@@ -1,91 +1,98 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Home | Born Free Limerence Coaching{% endblock %}
+{% block title %}Born Free Limerence Coaching | Overcome Obsessive Love and Build Healthy Relationships{% endblock %}
 
 {% block meta %}
-<meta name="description" content="Born Free Limerence Coaching offers professional guidance and support to overcome emotional obsession, unhealthy relationships, and limerence addiction. Serving Hooksett, NH and surrounding areas including Manchester, Bedford, Concord, Nashua, Amherst, Goffstown, Pembroke, Merrimack, Bow, Canterbury, and Epsom.">
-<meta name="keywords" content="Limerence therapist, Emotional obsession help, Relationship obsession counseling, Emotional dependency, Obsession, Effects of limerence, Longing, Limerence treatment, Obsessive love, Love addiction, Limerence and relationships, Limerence syndrome, Limerence addiction, Attachment theory, Anxious attachment, Unhealthy relationships, Emotional dependence, Toxic relationships, Codependency, Stages of limerence, Overcoming limerence, Help for limerence, Limerence support groups, All-consuming love, One-sided love, Uncontrollable feelings, Obsessed with someone, Fantasy love, Hopeless romantic, Desperate love, All-consuming desire, Unhealthy relationship patterns, Can't move on, Love addiction help, Breaking free from obsession, Love obsession help, Healing from heartbreak">
-<meta name="author" content="Clean Design UK">
+<meta name="description" content="Struggling with limerence or obsessive love? Born Free Limerence Coaching in Hooksett, NH, offers professional guidance to help you overcome emotional dependency and build healthier relationships. Serving Manchester, Bedford, Concord, Nashua, and surrounding areas.">
+<meta name="keywords" content="Limerence coach, Overcome limerence, Obsessive love help, Emotional dependency, Relationship coaching, Unhealthy relationships, Break free from obsession, Love addiction recovery, Heal from limerence, Limerence treatment, Hooksett NH coaching, Emotional obsession, Build healthy relationships, Anxious attachment support, Codependency solutions, Relationship patterns, Personal growth, Emotional freedom, Limerence recovery, Healing from heartbreak">
+<meta name="author" content="Born Free Limerence Coaching">
 <meta property="og:title" content="Born Free Limerence Coaching">
-<meta property="og:description" content="Born Free Limerence Coaching offers professional guidance and support to overcome emotional obsession, unhealthy relationships, and limerence addiction.">
+<meta property="og:description" content="Professional coaching to overcome limerence and build healthier relationships.">
 <meta property="og:image" content="{% static 'images/limerence-logo.png' %}">
 <meta property="og:url" content="https://www.bornfreelimerencecoaching.com">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Born Free Limerence Coaching">
-<meta name="twitter:description" content="Born Free Limerence Coaching offers professional guidance and support to overcome emotional obsession, unhealthy relationships, and limerence addiction.">
+<meta name="twitter:description" content="Professional coaching to overcome limerence and build healthier relationships.">
 <meta name="twitter:image" content="{% static 'images/limerence-logo.png' %}">
-
 {% endblock %}
+
 {% block extra_hero %}
 <link href="{% static 'css/home.css' %}" rel="stylesheet">
 <div class="hero-section text-center d-flex align-items-center justify-content-center">
     <div class="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-        <h1 class="text-dark mb-3">Born Free Limerence & <hr> Relationship Coaching</h1>
-        <p class="lead text-dark mb-4">Guiding you to healthier, more fulfilling relationships.</p>
-        
-        <button type="button" class="btn  btn-lg" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal">Learn More</button>
+        <h1 class="text-dark mb-3">Born Free Limerence & Relationship Coaching</h1>
+        <p class="lead text-dark mb-4">Guiding You to Overcome Obsessive Love and Build Healthy Relationships</p>
+        <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#serviceDetailsModal">Learn More</button>
     </div>
 </div>
 {% endblock %}
 
 {% block content %}
 <!-- Introduction Section -->
-
+<div id="introduction" class="container my-5">
+    <h2 class="text-center text-dark mb-4">Welcome to Born Free Limerence Coaching</h2>
+    <p class="text-muted text-justify">
+        Are you struggling with uncontrollable feelings for someone? Do obsessive thoughts and emotional dependency impact your daily life? At <strong>Born Free Limerence Coaching</strong>, we specialize in helping individuals overcome <a href="{% url 'services' %}" title="Limerence Coaching Services">limerence</a>—an intense form of obsessive love. Through professional guidance and personalized coaching, we empower you to break free from unhealthy relationship patterns and build fulfilling, secure connections. Serving Hooksett, NH, and surrounding areas including Manchester, Bedford, Concord, Nashua, and more, we're here to support you on your journey to emotional freedom and personal growth.
+    </p>
+</div>
 
 <!-- Navigation to Other Pages -->
 <div id="navigation" class="container my-5">
-    <h2 class="text-center text-dark mb-4">Explore Our Site</h2>
+    <h2 class="text-center text-dark mb-4">Explore Our Services</h2>
     <div class="row text-center">
-       <div class="col-md-6 col-lg-6 mb-4">
+        <!-- Limerence Coaching Card -->
+        <div class="col-md-6 mb-4">
             <div class="card h-100 hibiscus-card">
-                <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top card-img-top-height" alt="Services">
+                <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top card-img-top-height" alt="Limerence Coaching Services - Overcome Obsessive Love" title="Limerence Coaching Services - Overcome Obsessive Love">
                 <div class="card-body">
-                    <h5 class="card-title">Limerence Coaching </h5>
-                    <p class="card-text">Discover our limerence services.</p>
-  
-                    <a href="{% url 'services' %}" class="btn btn-primary hibiscus-btn">Get Started Today</a>
+                    <h5 class="card-title">Limerence Coaching</h5>
+                    <p class="card-text">Discover how to overcome obsessive love and emotional dependency.</p>
+                    <a href="{% url 'services' %}" class="btn btn-primary hibiscus-btn" title="Learn More About Limerence Coaching">Get Started Today</a>
                 </div>
             </div>
         </div>
-       <div class="col-md-6 col-lg-6 mb-4">
+        <!-- Relationship & Dating Coaching Card -->
+        <div class="col-md-6 mb-4">
             <div class="card h-100 new-card">
-                <img src="{% static 'images/relationship-coaching-1.jpg' %}" class="card-img-top card-img-top-height" alt="Services">
+                <img src="{% static 'images/relationship-coaching-1.jpg' %}" class="card-img-top card-img-top-height" alt="Relationship and Dating Coaching Services" title="Relationship and Dating Coaching Services">
                 <div class="card-body">
-                    <h5 class="card-title"> Relationship and Dating  Coaching </h5>
-                    <p class="card-text"> Take a look at our relationship focused services on offer.</p>
-                    <a href="{% url 'other_services' %}" class="btn btn-primary new-button">Explore Our Services</a>
+                    <h5 class="card-title">Relationship & Dating Coaching</h5>
+                    <p class="card-text">Improve communication and build healthier, more secure relationships.</p>
+                    <a href="{% url 'other_services' %}" class="btn btn-primary new-button" title="Explore Relationship & Dating Coaching Services">Explore Our Services</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4">
+        <!-- About Us Card -->
+        <div class="col-md-4 mb-4">
             <div class="card h-100 plumeria-card">
-                <img src="{% static 'images/about-image-hero.jpg' %}" class="card-img-top" alt="About Us">
+                <img src="{% static 'images/about-image-hero.jpg' %}" class="card-img-top" alt="About Born Free Limerence Coaching" title="About Born Free Limerence Coaching">
                 <div class="card-body">
-                    <h5 class="card-title">About</h5>
+                    <h5 class="card-title">About Us</h5>
                     <p class="card-text">Learn more about our mission and approach.</p>
-                    <a href="{% url 'about' %}" class="btn btn-primary plumeria-btn text-dark">Learn More</a>
+                    <a href="{% url 'about' %}" class="btn btn-primary plumeria-btn text-dark" title="Learn More About Us">Learn More</a>
                 </div>
             </div>
         </div>
- 
-        <div class="col-md-6 col-lg-4 mb-4">
+        <!-- Contact Us Card -->
+        <div class="col-md-4 mb-4">
             <div class="card h-100 orchid-card">
-                <img src="{% static 'images/contact-image.jpg' %}" class="card-img-top" alt="Contact Us">
+                <img src="{% static 'images/contact-image.jpg' %}" class="card-img-top" alt="Contact Born Free Limerence Coaching" title="Contact Born Free Limerence Coaching">
                 <div class="card-body">
-                    <h5 class="card-title">Contact</h5>
+                    <h5 class="card-title">Contact Us</h5>
                     <p class="card-text">Get in touch with us for more information.</p>
-                    <a href="{% url 'contact' %}" class="btn btn-primary orchid-btn">Start Your Healing Journey</a>
+                    <a href="{% url 'contact' %}" class="btn btn-primary orchid-btn" title="Contact Us to Start Your Healing Journey">Start Your Healing Journey</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4">
+        <!-- Blog Card -->
+        <div class="col-md-4 mb-4">
             <div class="card h-100 water-lily-card">
-                <img src="{% static 'images/blog-image.jpg' %}" class="card-img-top" alt="Blog">
+                <img src="{% static 'images/blog-image.jpg' %}" class="card-img-top" alt="Limerence Coaching Blog and Resources" title="Limerence Coaching Blog and Resources">
                 <div class="card-body">
                     <h5 class="card-title">Blog</h5>
                     <p class="card-text">Read our latest articles and insights.</p>
-                    <a href="{% url 'blog_list' %}" class="btn btn-primary water-lily-btn">Get Instant Access</a>
+                    <a href="{% url 'blog_list' %}" class="btn btn-primary water-lily-btn" title="Access Our Limerence Coaching Blog">Get Instant Access</a>
                 </div>
             </div>
         </div>
@@ -93,53 +100,60 @@
 </div>
 
 <!-- Testimonials Section -->
-<!-- Testimonials Section -->
 <div id="testimonials" class="container my-5 pb-5">
     <h2 class="text-center text-dark mb-4">What Our Clients Say</h2>
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner my-5">
+            <!-- Testimonial 1 -->
             <div class="carousel-item active">
                 <div class="testimonial text-center pb-3">
                     <p class="text-muted">"Born Free Limerence Coaching has changed my life! The guidance and support I received were invaluable."</p>
                     <h5 class="text-dark">- Sarah J.</h5>
                 </div>
             </div>
+            <!-- Testimonial 2 -->
             <div class="carousel-item">
                 <div class="testimonial text-center pb-3">
                     <p class="text-muted">"I struggled with limerence for years. The tools and strategies I learned here have helped me regain control over my emotions."</p>
                     <h5 class="text-dark">- Mark T.</h5>
                 </div>
             </div>
+            <!-- Testimonial 3 -->
             <div class="carousel-item">
                 <div class="testimonial text-center pb-3">
                     <p class="text-muted">"I never realized how much my past was influencing my present relationships. This coaching experience has been eye-opening."</p>
                     <h5 class="text-dark">- Emily K.</h5>
                 </div>
             </div>
+            <!-- Testimonial 4 -->
             <div class="carousel-item">
                 <div class="testimonial text-center pb-3">
                     <p class="text-muted">"The limerence coaching provided a safe space for me to explore my feelings and learn healthier ways to cope."</p>
                     <h5 class="text-dark">- David L.</h5>
                 </div>
             </div>
+            <!-- Testimonial 5 -->
             <div class="carousel-item">
                 <div class="testimonial text-center pb-3">
                     <p class="text-muted">"As someone who was new to the concept of limerence, I found the sessions incredibly informative and transformative."</p>
                     <h5 class="text-dark">- Jessica R.</h5>
                 </div>
             </div>
+            <!-- Testimonial 6 -->
             <div class="carousel-item">
                 <div class="testimonial text-center pb-3">
                     <p class="text-muted">"My dating life has completely changed for the better. I'm more confident and clear about what I want thanks to this coaching."</p>
                     <h5 class="text-dark">- Alex P.</h5>
                 </div>
             </div>
+            <!-- Testimonial 7 -->
             <div class="carousel-item">
                 <div class="testimonial text-center pb-3">
                     <p class="text-muted">"The mindfulness techniques I've learned have been life-changing. I feel more at peace and in control of my emotions."</p>
                     <h5 class="text-dark">- Maria S.</h5>
                 </div>
             </div>
+            <!-- Testimonial 8 -->
             <div class="carousel-item">
                 <div class="testimonial text-center pb-3">
                     <p class="text-muted">"This coaching has not only helped me with limerence but has also improved my overall mental health and well-being."</p>
@@ -147,77 +161,167 @@
                 </div>
             </div>
         </div>
-<div class="pt-1 pt-md-2 pt-lg-5 mt-3">
-        <button class="carousel-control-prev text-muted p-0 pt-4 " type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span >Previous</span>
-        </button>
-        <button class="carousel-control-next text-dark  p-0 pt-4   " type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
-            <span >Next</span>
-        </button>
+        <!-- Carousel Controls -->
+        <div class="pt-1 pt-md-2 pt-lg-5 mt-3">
+            <button class="carousel-control-prev text-muted p-0 pt-4" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" title="Previous Testimonials">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span>Previous</span>
+            </button>
+            <button class="carousel-control-next text-dark p-0 pt-4" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" title="Next Testimonials">
+                <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+                <span>Next</span>
+            </button>
+        </div>
     </div>
 </div>
-</div>
-
 
 <!-- Call-to-Action Section -->
 <div id="cta" class="text-center py-5 bg-light">
-    <h2 class="text-dark">Ready to Begin Your Journey?</h2>
-    <p class="text-muted">Contact us today to learn more or to book a session.</p>
-    <a href="{% url 'contact' %}" class="btn btn-primary">Get in Touch</a>
+    <h2 class="text-dark">Ready to Overcome Limerence and Build Healthy Relationships?</h2>
+    <p class="text-muted">Contact us today to learn more or to book a session with our experienced limerence coach.</p>
+    <a href="{% url 'contact' %}" class="btn btn-primary" title="Contact Born Free Limerence Coaching">Get in Touch</a>
 </div>
+<!-- Understanding Limerence Section -->
+<div id="understanding-limerence" class="container my-5">
+    <h2 class="text-center text-dark mb-4">Understanding Limerence</h2>
+    <p class="text-muted">
+        Limerence is an intense emotional state involving obsessive thoughts and fantasies about another person, often leading to emotional dependency and unrequited love. At <strong>Born Free Limerence Coaching</strong>, we specialize in helping individuals recognize and overcome limerence, guiding them towards healthier relationships and emotional freedom.
+    </p>
+    <p class="text-muted">
+        Our coaching services provide you with the tools to manage these overwhelming feelings, break free from unhealthy patterns, and build fulfilling relationships based on mutual respect and genuine connection.
+    </p>
+    <a href="{% url 'services' %}" class="btn btn-primary mt-3" title="Learn more about our Limerence Coaching Services">Learn More About Limerence</a>
+</div>
+
+<!-- Signs You May Be Experiencing Limerence Section -->
+<div id="limerence-signs" class="container my-5">
+    <h2 class="text-center text-dark mb-4">Signs You May Be Experiencing Limerence</h2>
+    <ul class="text-muted">
+        <li>Constantly thinking about a person to the point of obsession</li>
+        <li>Idealizing the person and ignoring their flaws</li>
+        <li>Experiencing intense emotional highs and lows</li>
+        <li>Difficulty concentrating on other aspects of life</li>
+        <li>Strong desire for reciprocation of feelings</li>
+    </ul>
+    <p class="text-muted mt-3">
+        If you recognize these signs in yourself, our specialized coaching can help you navigate these feelings and regain control over your emotional well-being.
+    </p>
+    <a href="{% url 'contact' %}" class="btn btn-primary mt-3" title="Contact us for support with limerence">Contact Us for Support</a>
+</div>
+
+<!-- Our Coaching Approach Section -->
+<div id="our-approach" class="container my-5">
+    <h2 class="text-center text-dark mb-4">Our Coaching Approach</h2>
+    <p class="text-muted">
+        At <strong>Born Free Limerence Coaching</strong>, we use a compassionate and personalized approach to help you overcome limerence. Our methods include:
+    </p>
+    <ul class="text-muted">
+        <li>Mindfulness and self-awareness practices</li>
+        <li>Cognitive-behavioral techniques to challenge obsessive thoughts</li>
+        <li>Developing healthy coping mechanisms</li>
+        <li>Strengthening self-esteem and personal boundaries</li>
+        <li>Creating a personalized plan for personal growth</li>
+    </ul>
+    <a href="{% url 'other_services' %}" class="btn btn-primary mt-3" title="Explore our other coaching services">Explore Our Coaching Services</a>
+</div>
+
+<!-- FAQs Section -->
+<div id="faqs" class="container my-5">
+    <h2 class="text-center text-dark mb-4">Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h5 class="text-dark">What is limerence?</h5>
+        <p class="text-muted">
+            Limerence is a state of intense romantic infatuation characterized by obsessive thoughts and a longing for reciprocation. It goes beyond a normal crush and can significantly impact your daily life and well-being.
+        </p>
+    </div>
+    <div class="faq-item">
+        <h5 class="text-dark">How can coaching help me overcome limerence?</h5>
+        <p class="text-muted">
+            Our coaching provides you with strategies to manage obsessive thoughts, understand underlying causes, and develop healthier relationship patterns. We support you in building self-confidence and emotional resilience.
+        </p>
+    </div>
+    <div class="faq-item">
+        <h5 class="text-dark">Is limerence the same as love addiction?</h5>
+        <p class="text-muted">
+            While they share similarities, limerence is specifically focused on an intense obsession with a particular person, whereas love addiction may involve patterns of dependency across multiple relationships.
+        </p>
+    </div>
+    <div class="faq-item">
+        <h5 class="text-dark">Can I recover from limerence?</h5>
+        <p class="text-muted">
+            Yes, with the right support and strategies, you can overcome limerence. Our coaching is designed to help you regain control and move towards healthier, more fulfilling relationships.
+        </p>
+    </div>
+    <a href="{% url 'contact' %}" class="btn btn-primary mt-3" title="Get in touch with us for more information">Have More Questions? Contact Us</a>
+</div>
+
+<!-- Resources Modal Trigger -->
+<div class="container my-5 py-4 text-center">
+    <h2 class="text-dark mb-4">Additional Resources</h2>
+    <p class="text-muted">Explore helpful resources to support your journey.</p>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#infoModal" title="View Limerence Resources">View Resources</button>
+</div>
+
+<!-- Resources Modal -->
 <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="infoModalLabel">Limerence Resources</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Close Modal"></button>
             </div>
             <div class="modal-body">
                 <ul>
-                    <li><a href="https://www.livingwithlimerence.com" target="_blank">Living With Limerence by Dr. L (Website)</a></li>
-                    <li><a href="https://www.amazon.com/Limerent-Mind-Permanently-Limerence-Shine/dp/B08C961BVC/ref=pd_lpo_sccl_2/142-6124788-5568730?pd_rd_w=mLtt9&content-id=amzn1.sym.4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_p=4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_r=S6R4B4H49HTDXQHTR4VX&pd_rd_wg=LLp8J&pd_rd_r=e67a5e99-a332-4333-aa79-9d6122802929&pd_rd_i=B08C961BVC&psc=1" target="_blank">Living With Limerence by Lucy Bain (Book)</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=ga4VHjKkv70&list=PLl504D3b_OPhL2U5T5rxS7O_d_q5JKyfH" target="_blank">“Crappy Childhood Fairy” — YouTube Channel</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=Fvi9pDnIxb4" target="_blank">Patrick Teahan — YouTube Channel</a></li>
-                    <li><a href="https://www.eckharttolle.com/a-new-earth/" target="_blank">A New Earth by Eckhart Tolle</a></li>
-                    <li><a href="https://jonkabat-zinn.com/offerings/books/" target="_blank">Wherever You Go, There You Are by Jon Kabat-Zinn</a></li>
-                    <li><a href="https://www.ucsd.edu/mindfulness" target="_blank">UCSD Center for Mindfulness (Guided Meditations)</a></li>
+                    <li><a href="https://livingwithlimerence.com" target="_blank" rel="noopener noreferrer" title="Living With Limerence by Dr. L (Website)">Living With Limerence by Dr. L (Website)</a></li>
+                    <li><a href="https://www.amazon.com/Living-Limerence-Journey-Obsessive-Infatuation-ebook/dp/B07VWSG7Q8" target="_blank" rel="noopener noreferrer" title="Living With Limerence by Dr. L (Book)">Living With Limerence by Dr. L (Book)</a></li>
+                    <li><a href="https://www.youtube.com/c/CrappyChildhoodFairy" target="_blank" rel="noopener noreferrer" title="Crappy Childhood Fairy — YouTube Channel">Crappy Childhood Fairy — YouTube Channel</a></li>
+                    <li><a href="https://www.youtube.com/c/PatrickTeahanLICSW" target="_blank" rel="noopener noreferrer" title="Patrick Teahan — YouTube Channel">Patrick Teahan — YouTube Channel</a></li>
+                    <li><a href="https://www.eckharttolle.com/a-new-earth/" target="_blank" rel="noopener noreferrer" title="A New Earth by Eckhart Tolle (Book)">A New Earth by Eckhart Tolle (Book)</a></li>
+                    <li><a href="https://jonkabat-zinn.com/books/" target="_blank" rel="noopener noreferrer" title="Wherever You Go, There You Are by Jon Kabat-Zinn (Book)">Wherever You Go, There You Are by Jon Kabat-Zinn (Book)</a></li>
+                    <li><a href="https://health.ucsd.edu/specialties/mindfulness/programs/mbsr/Pages/audio.aspx" target="_blank" rel="noopener noreferrer" title="UCSD Center for Mindfulness (Guided Meditations)">UCSD Center for Mindfulness (Guided Meditations)</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+
 <!-- Service Details Modal -->
 <div class="modal fade" id="serviceDetailsModal" tabindex="-1" aria-labelledby="serviceDetailsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content p-4">
             <div class="modal-header border-0 mb-3">
                 <h5 class="modal-title text-dark" id="serviceDetailsModalLabel">Our Coaching Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Close Modal"></button>
             </div>
             <div class="modal-body">
                 <div class="row mb-4">
-                    <div class="col-md-6">
-                        <h6 class="text-dark mb-3">Relationship & Dating Coaching</h6>
-                        <p class="text-muted">I work with individuals and couples to improve communication, emotional intimacy, and trust. We focus on building confidence, setting goals, and managing boundaries to foster healthier, more secure relationships.</p>
-                    </div>
+                    <!-- Limerence Coaching Details -->
                     <div class="col-md-6">
                         <h6 class="text-dark mb-3">Limerence Coaching</h6>
-                        <p class="text-muted">Specializing in limerence, I help individuals manage obsessive thoughts and behaviors tied to unrequited love. Through mindfulness, value-based living, and self-compassion, we work towards relief and a purposeful life.</p>
+                        <p class="text-muted">
+                            Specializing in limerence, we help you manage obsessive thoughts and behaviors tied to unrequited love. Through mindfulness, value-based living, and self-compassion, we work towards relief and a purposeful life.
+                        </p>
+                    </div>
+                    <!-- Relationship & Dating Coaching Details -->
+                    <div class="col-md-6">
+                        <h6 class="text-dark mb-3">Relationship & Dating Coaching</h6>
+                        <p class="text-muted">
+                            We work with individuals and couples to improve communication, emotional intimacy, and trust. Our focus is on building confidence, setting goals, and managing boundaries to foster healthier, more secure relationships.
+                        </p>
                     </div>
                 </div>
                 <div class="mb-4">
                     <h6 class="text-dark mb-3">Why Choose Us?</h6>
-                    <p class="text-muted">We provide a compassionate, presence-filled approach to coaching. With a focus on real-time communication improvements and practical assignments, we help you create more secure, trusting, and loving relationships.</p>
+                    <p class="text-muted">
+                        We provide a compassionate, presence-filled approach to coaching. With a focus on real-time communication improvements and practical assignments, we help you create more secure, trusting, and loving relationships.
+                    </p>
                 </div>
             </div>
             <div class="modal-footer border-0">
-                <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="{% url 'contact' %}" class="btn btn-primary" title="Contact Born Free Limerence Coaching">Contact Us</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" title="Close Modal">Close</button>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}

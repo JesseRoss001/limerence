@@ -1,73 +1,113 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Other Services | Born Free, Relationship & Dating Coaching{% endblock %}
+{% block title %}Relationship & Dating Coaching Services | Born Free Coaching{% endblock %}
 
 {% block meta %}
-<meta name="description" content="Explore the range of services offered by Born Free Coaching, including Relationship and Dating Coaching to help you build healthier, more fulfilling connections. Serving Hooksett, NH, and surrounding areas.">
-<meta name="keywords" content="Relationship coaching services, Dating coaching, Relationship improvement, Emotional intimacy, Trust building, Communication coaching, Boundary setting, Dating strategy, Hooksett NH, Manchester, Bedford, Concord, Nashua, Amherst, Goffstown, Pembroke, Merrimack, Bow, Canterbury, Epsom">
-<meta name="author" content="Clean Design UK">
-<meta property="og:title" content="Other Services - Born Free Coaching">
-<meta property="og:description" content="Explore the range of services offered by Born Free Coaching, including Relationship and Dating Coaching to help you build healthier, more fulfilling connections.">
+<meta name="description" content="Discover professional relationship and dating coaching services by Born Free Coaching. Build healthier, more fulfilling connections with personalized guidance. Serving Hooksett, NH, and surrounding areas.">
+<meta name="keywords" content="Relationship coaching services, Dating coaching, Improve relationships, Emotional intimacy, Trust building, Communication coaching, Boundary setting, Dating strategy, Relationship advice, Healthy relationships, Hooksett NH, Manchester, Bedford, Concord, Nashua, Amherst, Goffstown, Pembroke, Merrimack, Bow, Canterbury, Epsom">
+<meta name="author" content="Born Free Coaching">
+<meta property="og:title" content="Relationship & Dating Coaching Services - Born Free Coaching">
+<meta property="og:description" content="Discover professional relationship and dating coaching services by Born Free Coaching. Build healthier, more fulfilling connections with personalized guidance.">
 <meta property="og:image" content="{% static 'images/relationship-coaching.png' %}">
 <meta property="og:url" content="https://www.bornfreelimerencecoaching.com/other-services">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Other Services - Born Free Coaching">
-<meta name="twitter:description" content="Explore the range of services offered by Born Free Coaching, including Relationship and Dating Coaching to help you build healthier, more fulfilling connections.">
+<meta name="twitter:title" content="Relationship & Dating Coaching Services - Born Free Coaching">
+<meta name="twitter:description" content="Discover professional relationship and dating coaching services by Born Free Coaching. Build healthier, more fulfilling connections with personalized guidance.">
 <meta name="twitter:image" content="{% static 'images/relationship-coaching.png' %}">
 
 {% endblock %}
 
 {% block content %}
 <link href="{% static 'css/service2.css' %}" rel="stylesheet">
+
 <div class="container pt-5 pb-5">
-    <!-- Header Section -->
+    <!-- Introduction Section -->
     <div class="text-center mb-4">
         <h1 class="text-dark mb-3">Relationship & Dating Coaching</h1>
-        <p class="lead text-muted">Discover how our coaching services can help you build stronger, more meaningful relationships.</p>
+        <p class="lead text-muted">Discover how our professional coaching services can help you build stronger, more meaningful relationships and improve your dating experiences.</p>
+    </div>
+
+    <!-- Understanding Relationship Coaching Section -->
+    <div id="understanding-coaching" class="mb-5">
+        <h2 class="text-dark text-center py-4">What is Relationship & Dating Coaching?</h2>
+        <p class="text-muted">
+            Relationship and dating coaching is a personalized service designed to help individuals and couples achieve their relationship goals. Whether you're looking to enhance communication, build trust, set healthy boundaries, or improve your dating strategies, our coaching services provide you with the tools and guidance you need to succeed.
+        </p>
+        <p class="text-muted">
+            At <strong>Born Free Coaching</strong>, we specialize in helping you navigate the complexities of relationships and dating. Our experienced coaches use proven techniques to empower you to build fulfilling connections and overcome challenges.
+        </p>
     </div>
 
     <!-- Service Packages Section -->
     <div class="mb-5">
-        <h2 class="text-dark text-center py-4">Packages</h2>
+        <h2 class="text-dark text-center py-4">Our Coaching Packages</h2>
         <div class="row">
             <!-- Package 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 new-card">
-                    <img src="{% static 'images/relationship-coaching-1.jpg' %}" class="card-img-top" alt="Package 1">
+                    <img src="{% static 'images/relationship-coaching-1.jpg' %}" class="card-img-top" alt="Basic Relationship Package" title="Basic Relationship Coaching Package">
                     <div class="card-body">
                         <h5 class="card-title">Basic Relationship Package ($150/session)</h5>
-                        <p class="card-text">4 weeks of focused relationship coaching.</p>
-                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package1Modal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2">Interested</a>
+                        <p class="card-text">4 weeks of focused relationship coaching to address key areas.</p>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package1Modal" title="Learn more about the Basic Relationship Package">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2" title="Book the Basic Relationship Package">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Package 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 new-card">
-                    <img src="{% static 'images/relationship-coaching-2.jpg' %}" class="card-img-top" alt="Package 2">
+                    <img src="{% static 'images/relationship-coaching-2.jpg' %}" class="card-img-top" alt="Advanced Relationship Package" title="Advanced Relationship Coaching Package">
                     <div class="card-body">
                         <h5 class="card-title">Advanced Relationship Package ($140/session)</h5>
-                        <p class="card-text">8 weeks of in-depth relationship coaching.</p>
-                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package2Modal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2">Interested</a>
+                        <p class="card-text">8 weeks of in-depth coaching to deepen your connections.</p>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package2Modal" title="Learn more about the Advanced Relationship Package">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2" title="Book the Advanced Relationship Package">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Package 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 new-card">
-                    <img src="{% static 'images/relationship-coaching-3.jpg' %}" class="card-img-top" alt="Package 3">
+                    <img src="{% static 'images/relationship-coaching-3.jpg' %}" class="card-img-top" alt="Comprehensive Dating Package" title="Comprehensive Dating Coaching Package">
                     <div class="card-body">
                         <h5 class="card-title">Comprehensive Dating Package ($130/session)</h5>
                         <p class="card-text">12 weeks of coaching to transform your dating life.</p>
-                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package3Modal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2">Interested</a>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#package3Modal" title="Learn more about the Comprehensive Dating Package">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2" title="Book the Comprehensive Dating Package">Interested</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Benefits of Our Coaching Services Section -->
+    <div id="benefits" class="mb-5">
+        <h2 class="text-dark text-center py-4">Benefits of Our Coaching Services</h2>
+        <ul class="text-muted">
+            <li>Improve communication skills for healthier relationships</li>
+            <li>Build trust and emotional intimacy with your partner</li>
+            <li>Learn effective conflict resolution strategies</li>
+            <li>Develop confidence in dating and social interactions</li>
+            <li>Set and maintain healthy boundaries</li>
+            <li>Enhance self-awareness and personal growth</li>
+        </ul>
+    </div>
+
+    <!-- Who Can Benefit Section -->
+    <div id="who-benefits" class="mb-5">
+        <h2 class="text-dark text-center py-4">Who Can Benefit from Our Services?</h2>
+        <p class="text-muted">
+            Our relationship and dating coaching services are ideal for:
+        </p>
+        <ul class="text-muted">
+            <li>Individuals seeking to improve their current relationships</li>
+            <li>Singles looking for guidance in the dating world</li>
+            <li>Couples wanting to strengthen their connection</li>
+            <li>Those recovering from past relationship challenges</li>
+            <li>Anyone interested in personal development and better relationships</li>
+        </ul>
     </div>
 
     <!-- Additional Services Section -->
@@ -77,116 +117,197 @@
             <!-- One-on-One Sessions -->
             <div class="col-md-6 mb-4">
                 <div class="card h-100 new-card">
-                    <img src="{% static 'images/relationship-coaching-4.jpg' %}" class="card-img-top" alt="One-on-One">
+                    <img src="{% static 'images/relationship-coaching-4.jpg' %}" class="card-img-top" alt="One-on-One Coaching" title="Personalized One-on-One Coaching Sessions">
                     <div class="card-body">
                         <h5 class="card-title">One-on-One Sessions ($180/session)</h5>
                         <p class="card-text">Personalized sessions to address specific challenges.</p>
-                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#oneOnOneModal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2">Interested</a>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#oneOnOneModal" title="Learn more about One-on-One Sessions">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2" title="Book a One-on-One Session">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Group Coaching -->
             <div class="col-md-6 mb-4">
                 <div class="card h-100 new-card">
-                    <img src="{% static 'images/relationship-coaching-5.jpg' %}" class="card-img-top" alt="Group Coaching">
+                    <img src="{% static 'images/relationship-coaching-5.jpg' %}" class="card-img-top" alt="Group Coaching" title="Supportive Group Coaching Sessions">
                     <div class="card-body">
                         <h5 class="card-title">Group Coaching ($100/session)</h5>
                         <p class="card-text">Join a group to learn and grow together.</p>
-                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#groupCoachingModal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2">Interested</a>
+                        <button type="button" class="btn btn-primary new-button mt-2" data-bs-toggle="modal" data-bs-target="#groupCoachingModal" title="Learn more about Group Coaching">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary new-button mt-2" title="Join Group Coaching">Interested</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modals for Package Details -->
-<div class="modal fade" id="package1Modal" tabindex="-1" aria-labelledby="package1ModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="package1ModalLabel">Basic Relationship Package ($150/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="container my-5 pb-5">
+        <h2 class="text-center text-dark mb-4">What Our Clients Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner my-5">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial text-center pb-3">
+                        <p class="text-muted">"Born Free Coaching helped me rebuild my confidence after a tough breakup. I'm now in a healthy relationship and couldn't be happier."</p>
+                        <h5 class="text-dark">- Amanda S.</h5>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial text-center pb-3">
+                        <p class="text-muted">"The dating coaching transformed the way I approach relationships. I feel more authentic and connected than ever."</p>
+                        <h5 class="text-dark">- Jason L.</h5>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial text-center pb-3">
+                        <p class="text-muted">"Our couples coaching sessions improved our communication and brought us closer together. Highly recommended."</p>
+                        <h5 class="text-dark">- Sarah and Mike</h5>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <p>4 weeks of coaching focused on improving communication, building trust, and setting boundaries in your relationship.</p>
+            <!-- Carousel Controls -->
+            <div class="pt-1 pt-md-2 pt-lg-5 mt-3">
+                <button class="carousel-control-prev text-muted p-0 pt-4" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span>Previous</span>
+                </button>
+                <button class="carousel-control-next text-dark p-0 pt-4" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+                    <span>Next</span>
+                </button>
             </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
+        </div>
+    </div>
+
+    <!-- FAQs Section -->
+    <div id="faqs" class="mb-5">
+        <h2 class="text-dark text-center py-4">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h5 class="text-dark">What can I expect from relationship coaching?</h5>
+            <p class="text-muted">
+                Relationship coaching provides personalized guidance to help you overcome challenges, improve communication, and build stronger connections. You'll gain valuable insights and practical tools tailored to your unique situation.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h5 class="text-dark">How is dating coaching different from relationship coaching?</h5>
+            <p class="text-muted">
+                Dating coaching focuses specifically on strategies and skills to enhance your dating experiences, such as confidence building, effective communication, and understanding dating dynamics. Relationship coaching addresses ongoing relationships and aims to improve or repair them.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h5 class="text-dark">Can coaching help me if I'm single?</h5>
+            <p class="text-muted">
+                Absolutely! Our coaching services are designed to help singles prepare for healthy relationships by developing self-awareness, confidence, and effective dating strategies.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h5 class="text-dark">Do you offer virtual coaching sessions?</h5>
+            <p class="text-muted">
+                Yes, we offer both in-person and virtual coaching sessions to accommodate your needs and schedule.
+            </p>
+        </div>
+        <a href="{% url 'contact' %}" class="btn btn-primary mt-3" title="Contact us for more information">Have More Questions? Contact Us</a>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div id="cta" class="text-center py-5 bg-light">
+        <h2 class="text-dark">Ready to Transform Your Relationships?</h2>
+        <p class="text-muted">Take the first step towards healthier, more fulfilling connections.</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary" title="Get in touch with Born Free Coaching">Get in Touch</a>
+    </div>
+
+    <!-- Modals for Package Details -->
+    <!-- Package 1 Modal -->
+    <div class="modal fade" id="package1Modal" tabindex="-1" aria-labelledby="package1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="package1ModalLabel">Basic Relationship Package ($150/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This 4-week coaching package focuses on improving communication, building trust, and setting healthy boundaries in your relationship. You'll learn practical skills to enhance your connection and address common challenges.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Book the Basic Relationship Package">Interested</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Package 2 Modal -->
+    <div class="modal fade" id="package2Modal" tabindex="-1" aria-labelledby="package2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="package2ModalLabel">Advanced Relationship Package ($140/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Over 8 weeks, this package dives deeper into emotional and sexual intimacy, conflict resolution, and long-term relationship strategies. Ideal for couples seeking to strengthen their bond and navigate complex issues.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Book the Advanced Relationship Package">Interested</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Package 3 Modal -->
+    <div class="modal fade" id="package3Modal" tabindex="-1" aria-labelledby="package3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="package3ModalLabel">Comprehensive Dating Package ($130/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This 12-week intensive coaching package is designed to transform your dating life. We'll cover confidence building, understanding dating dynamics, effective communication, and creating meaningful connections.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Book the Comprehensive Dating Package">Interested</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- One-on-One Sessions Modal -->
+    <div class="modal fade" id="oneOnOneModal" tabindex="-1" aria-labelledby="oneOnOneModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="oneOnOneModalLabel">One-on-One Sessions ($180/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our personalized one-on-one coaching sessions are tailored to address your unique relationship challenges. Whether you're dealing with communication issues, trust concerns, or personal growth, we're here to support you.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Book a One-on-One Session">Interested</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Group Coaching Modal -->
+    <div class="modal fade" id="groupCoachingModal" tabindex="-1" aria-labelledby="groupCoachingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="groupCoachingModalLabel">Group Coaching ($100/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Join our supportive group coaching sessions where you can learn and grow alongside others facing similar relationship challenges. These sessions provide a collaborative approach to building better relationships.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Join Group Coaching">Interested</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="modal fade" id="package2Modal" tabindex="-1" aria-labelledby="package2ModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="package2ModalLabel">Advanced Relationship Package ($140/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>8 weeks of comprehensive coaching to dive deeper into emotional intimacy, sexual intimacy, and conflict resolution.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="package3Modal" tabindex="-1" aria-labelledby="package3ModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="package3ModalLabel">Comprehensive Dating Package ($130/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>12 weeks of intensive coaching designed to transform your dating life, improve confidence, and enhance your interpersonal skills.</p>
-                  </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="oneOnOneModal" tabindex="-1" aria-labelledby="oneOnOneModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="oneOnOneModalLabel">One-on-One Sessions ($180/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Personalized one-on-one coaching sessions designed to address your unique relationship challenges, whether you're dealing with communication issues, trust, or other concerns.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="groupCoachingModal" tabindex="-1" aria-labelledby="groupCoachingModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="groupCoachingModalLabel">Group Coaching ($100/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Join a supportive group environment where you can learn and grow alongside others facing similar relationship challenges. These sessions provide a collaborative approach to building better relationships.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 {% endblock %}

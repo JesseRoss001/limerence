@@ -195,3 +195,65 @@ background-color: #ff6f61;}
         width: 100px;
         height: 100px;
     }
+/* Additional Section Styles */
+#understanding-limerence,
+#limerence-signs,
+#our-approach,
+#faqs {
+    background-color: #f0f4f8; /* Light grey background to match container styling */
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+#understanding-limerence h2,
+#limerence-signs h2,
+#our-approach h2,
+#faqs h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #212529; /* Dark grey for headers */
+}
+
+#understanding-limerence p,
+#limerence-signs p,
+#our-approach p,
+#faqs p,
+#limerence-signs ul,
+#our-approach ul {
+    font-family: 'Lato', sans-serif;
+    color: #6c757d; /* Medium grey for body text */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#limerence-signs ul,
+#our-approach ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#faqs .faq-item {
+    margin-bottom: 20px;
+}
+
+#faqs h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #77797c; /* Consistent with card titles */
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #4a90e2; /* Blue from the color palette */
+    border-color: #4a90e2;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #3a78c2;
+    border-color: #3a78c2;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}

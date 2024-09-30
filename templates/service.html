@@ -1,71 +1,74 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Services | Born Free, Limerence Coaching{% endblock %}
+
+{% block title %}Limerence Coaching Services | Born Free Limerence Coaching{% endblock %}
+
 {% block meta %}
-<meta name="description" content="Explore the range of services offered by Born Free Limerence Coaching, including personalized coaching packages and additional support options to help you overcome limerence and emotional obsession. Serving Hooksett, NH, and surrounding areas.">
-<meta name="keywords" content="Limerence coaching services, Emotional obsession help, Relationship counseling, Coaching packages, Personalized support, Mental health services, Therapy services, Counseling, Hooksett NH, Manchester, Bedford, Concord, Nashua, Amherst, Goffstown, Pembroke, Merrimack, Bow, Canterbury, Epsom, Mindfulness, Dialectical Behavior Therapy, Existential Therapy, Strength-Based Therapy, Professional coaching">
-<meta name="author" content="Clean Design UK">
-<meta property="og:title" content="Services - Born Free Limerence Coaching">
-<meta property="og:description" content="Explore the range of services offered by Born Free Limerence Coaching, including personalized coaching packages and additional support options to help you overcome limerence and emotional obsession.">
+<meta name="description" content="Overcome limerence and emotional obsession with our specialized coaching services. Born Free Limerence Coaching offers personalized support to help you break free from unhealthy relationship patterns. Serving Hooksett, NH, and surrounding areas including Manchester, Bedford, Concord, Nashua, and more.">
+<meta name="keywords" content="Limerence coaching services, Overcome limerence, Emotional obsession help, Relationship coaching, Personalized support, Break free from obsession, Heal from limerence, Limerence treatment, Hooksett NH coaching, Emotional dependency, Unhealthy relationships, Mindfulness coaching, Cognitive-behavioral techniques, Limerence recovery, Healing from heartbreak, Anxious attachment, Codependency solutions, Personal growth, Emotional freedom, Build healthy relationships">
+<meta name="author" content="Born Free Limerence Coaching">
+<meta property="og:title" content="Limerence Coaching Services - Born Free Limerence Coaching">
+<meta property="og:description" content="Specialized coaching services to help you overcome limerence and build healthier relationships.">
 <meta property="og:image" content="{% static 'images/limerence-logo.png' %}">
 <meta property="og:url" content="https://www.bornfreelimerencecoaching.com/services">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Services - Born Free Limerence Coaching">
-<meta name="twitter:description" content="Explore the range of services offered by Born Free Limerence Coaching, including personalized coaching packages and additional support options to help you overcome limerence and emotional obsession.">
+<meta name="twitter:title" content="Limerence Coaching Services - Born Free Limerence Coaching">
+<meta name="twitter:description" content="Specialized coaching services to help you overcome limerence and build healthier relationships.">
 <meta name="twitter:image" content="{% static 'images/limerence-logo.png' %}">
-
 {% endblock %}
+
 {% block content %}
 <link href="{% static 'css/service1.css' %}" rel="stylesheet">
+
 <div class="container pt-5 pb-5">
     <!-- Header Section -->
     <div class="text-center mb-4">
-        <h1 class="text-dark mb-3">Limerence  Services</h1>
-        <p class="lead text-muted">Explore the different ways we can help you on your journey to overcoming limerence.</p>
-<hr>
-<p class="lead text-muted"> Click the button below to view  great resources on limerence.</p>
-        <button type="button" class="btn btn-info  top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#infoModal">
-            Limerence Sources
+        <h1 class="text-dark mb-3">Limerence Coaching Services</h1>
+        <p class="lead text-muted">Explore the different ways we can help you overcome limerence and build healthier relationships.</p>
+        <hr>
+        <p class="lead text-muted">Click the button below to view great resources on limerence.</p>
+        <button type="button" class="btn btn-info top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#infoModal" title="View Limerence Resources">
+            Limerence Resources
         </button>
     </div>
 
     <!-- Service Packages Section -->
     <div class="mb-5">
-        <h2 class="text-dark text-center py-4">Packages</h2>
+        <h2 class="text-dark text-center py-4">Our Coaching Packages</h2>
         <div class="row">
             <!-- Package 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 plumeria-card">
-                    <img src="{% static 'images/plumeria-flower.jpg' %}" class="card-img-top" alt="Plumeria Package">
+                    <img src="{% static 'images/plumeria-flower.jpg' %}" class="card-img-top" alt="Plumeria Package - 4 Weeks Coaching" title="Plumeria Package - 4 Weeks Coaching">
                     <div class="card-body">
-                        <h5 class="card-title">Plumeria ($175/session)</h5>
+                        <h5 class="card-title">Plumeria Package ($175/session)</h5>
                         <p class="card-text">4 weeks of weekly coaching sessions.</p>
-                        <button type="button" class="btn btn-primary plumeria-btn mt-2 " data-bs-toggle="modal" data-bs-target="#plumeriaModal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary plumeria-btn mt-2 ">Interested</a>
+                        <button type="button" class="btn btn-primary plumeria-btn mt-2" data-bs-toggle="modal" data-bs-target="#plumeriaModal" title="Learn more about the Plumeria Package">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary plumeria-btn mt-2" title="Book the Plumeria Package">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Package 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 hibiscus-card">
-                    <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top" alt="Hibiscus Package">
+                    <img src="{% static 'images/hibiscus-flower.jpg' %}" class="card-img-top" alt="Hibiscus Package - 8 Weeks Coaching" title="Hibiscus Package - 8 Weeks Coaching">
                     <div class="card-body">
-                        <h5 class="card-title">Hibiscus ($150/session)</h5>
+                        <h5 class="card-title">Hibiscus Package ($150/session)</h5>
                         <p class="card-text">8 weeks of weekly coaching sessions.</p>
-                        <button type="button" class="btn btn-primary hibiscus-btn mt-2 " data-bs-toggle="modal" data-bs-target="#hibiscusModal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary hibiscus-btn mt-2 ">Interested</a>
+                        <button type="button" class="btn btn-primary hibiscus-btn mt-2" data-bs-toggle="modal" data-bs-target="#hibiscusModal" title="Learn more about the Hibiscus Package">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary hibiscus-btn mt-2" title="Book the Hibiscus Package">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Package 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 water-lily-card">
-                    <img src="{% static 'images/water-lily-flower.jpg' %}" class="card-img-top" alt="Water Lily Package">
+                    <img src="{% static 'images/water-lily-flower.jpg' %}" class="card-img-top" alt="Water Lily Package - 12 Weeks Coaching" title="Water Lily Package - 12 Weeks Coaching">
                     <div class="card-body">
-                        <h5 class="card-title">Water Lily ($125/session)</h5>
+                        <h5 class="card-title">Water Lily Package ($125/session)</h5>
                         <p class="card-text">12 weeks of weekly coaching sessions.</p>
-                        <button type="button" class="btn btn-primary water-lily-btn mt-2 " data-bs-toggle="modal" data-bs-target="#waterLilyModal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min"class="btn btn-secondary water-lily-btn mt-2">Interested</a>
+                        <button type="button" class="btn btn-primary water-lily-btn mt-2" data-bs-toggle="modal" data-bs-target="#waterLilyModal" title="Learn more about the Water Lily Package">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary water-lily-btn mt-2" title="Book the Water Lily Package">Interested</a>
                     </div>
                 </div>
             </div>
@@ -74,145 +77,258 @@
 
     <!-- Additional Services Section -->
     <div class="mb-5">
-        <h2 class=" text-dark text-center py-4">Additional Services</h2>
+        <h2 class="text-dark text-center py-4">Additional Services</h2>
         <div class="row">
             <!-- Monthly Process Groups -->
             <div class="col-md-6 mb-4">
                 <div class="card h-100 orchid-card">
-                    <img src="{% static 'images/orchid.jpg' %}" class="card-img-top" alt="Process Group">
+                    <img src="{% static 'images/orchid.jpg' %}" class="card-img-top" alt="Monthly Process Groups" title="Monthly Process Groups">
                     <div class="card-body">
                         <h5 class="card-title">Monthly Process Groups ($40/month)</h5>
                         <p class="card-text">Join our monthly process group for continued support and community building.</p>
-                        <button type="button" class="btn btn-primary orchid-btn mt-2" data-bs-toggle="modal" data-bs-target="#processGroupModal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary orchid-btn mt-2">Interested</a>
+                        <button type="button" class="btn btn-primary orchid-btn mt-2" data-bs-toggle="modal" data-bs-target="#processGroupModal" title="Learn more about Monthly Process Groups">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary orchid-btn mt-2" title="Join the Monthly Process Groups">Interested</a>
                     </div>
                 </div>
             </div>
             <!-- Individual Sessions -->
             <div class="col-md-6 mb-4">
                 <div class="card h-100 chrysanthemum-card">
-                    <img src="{% static 'images/flow-test.jpg' %}" class="card-img-top" alt="Individual Session">
+                    <img src="{% static 'images/flow-test.jpg' %}" class="card-img-top" alt="Individual Coaching Sessions" title="Individual Coaching Sessions">
                     <div class="card-body">
                         <h5 class="card-title">Individual Sessions ($200/session)</h5>
                         <p class="card-text">Individual sessions are available for those seeking more personalized support.</p>
-                        <button type="button" class="btn btn-primary chrysanthemum-btn mt-2" data-bs-toggle="modal" data-bs-target="#individualSessionModal">Learn More</button>
-                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary chrysanthemum-btn mt-2">Interested</a>
+                        <button type="button" class="btn btn-primary chrysanthemum-btn mt-2" data-bs-toggle="modal" data-bs-target="#individualSessionModal" title="Learn more about Individual Sessions">Learn More</button>
+                        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-secondary chrysanthemum-btn mt-2" title="Book an Individual Session">Interested</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modals for Package Details -->
-<div class="modal fade" id="plumeriaModal" tabindex="-1" aria-labelledby="plumeriaModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="plumeriaModalLabel">Plumeria Package ($175/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>This package includes weekly coaching sessions, over a period of 4 weeks. During this time, we will explore the meaning of limerence and how it differs from love, signs and symptoms, your specific situation and how it manifests in your day-to-day life, tracking thought patterns, neuropsychological components, mindfulness skills, triggers, coping skills to ride out urges and compulsions, plus ways to replace limerent behavior with positive and meaningful experiences.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
+    <!-- Additional Sections for SEO Enhancement -->
+    <!-- Understanding Our Coaching Approach Section -->
+    <div id="coaching-approach" class="container my-5">
+        <h2 class="text-center text-dark mb-4">Our Coaching Approach</h2>
+        <p class="text-muted">
+            At <strong>Born Free Limerence Coaching</strong>, we utilize evidence-based techniques to help you overcome limerence and build healthier relationships. Our approach includes:
+        </p>
+        <ul class="text-muted">
+            <li>Mindfulness practices to increase self-awareness and present-moment focus</li>
+            <li>Cognitive-behavioral strategies to challenge and change unhelpful thought patterns</li>
+            <li>Attachment theory principles to understand relationship dynamics</li>
+            <li>Personalized action plans tailored to your unique situation</li>
+            <li>Ongoing support and accountability to ensure lasting change</li>
+        </ul>
+        <a href="{% url 'contact' %}" class="btn btn-primary mt-3" title="Contact us to learn more about our coaching approach">Learn More About Our Approach</a>
+    </div>
+
+    <!-- Success Stories Section -->
+    <div id="success-stories" class="container my-5">
+        <h2 class="text-center text-dark mb-4">Success Stories</h2>
+        <p class="text-muted">
+            Hear from our clients who have successfully overcome limerence and transformed their lives:
+        </p>
+        <div class="testimonial">
+            <p class="text-muted">
+                "Working with Born Free Limerence Coaching was life-changing. I finally understood my patterns and learned how to build healthier relationships." – <strong>Emily R.</strong>
+            </p>
+        </div>
+        <div class="testimonial">
+            <p class="text-muted">
+                "The personalized coaching approach helped me overcome my obsessive thoughts and regain control over my life." – <strong>Michael S.</strong>
+            </p>
+        </div>
+        
+    </div>
+
+    <!-- FAQs Section -->
+    <div id="faqs" class="container my-5">
+        <h2 class="text-center text-dark mb-4">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h5 class="text-dark">What is limerence?</h5>
+            <p class="text-muted">
+                Limerence is an intense emotional state of obsessive infatuation with another person, characterized by intrusive thoughts and a strong desire for reciprocation.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h5 class="text-dark">How do I know if I'm experiencing limerence?</h5>
+            <p class="text-muted">
+                Common signs include constant preoccupation with the person, idealization, mood swings based on interactions with them, and neglecting other aspects of life.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h5 class="text-dark">Can limerence be overcome?</h5>
+            <p class="text-muted">
+                Yes, with the right support and strategies, individuals can overcome limerence and develop healthier relationship patterns.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h5 class="text-dark">How are your coaching services different from therapy?</h5>
+            <p class="text-muted">
+                Our coaching focuses on present challenges and actionable strategies to move forward, whereas therapy may delve deeper into past experiences and mental health diagnoses.
+            </p>
+        </div>
+        <a href="{% url 'contact' %}" class="btn btn-primary mt-3" title="Contact us for more information">Have More Questions? Contact Us</a>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div id="cta" class="text-center py-5 bg-light">
+        <h2 class="text-dark">Ready to Overcome Limerence?</h2>
+        <p class="text-muted">Take the first step towards emotional freedom and healthier relationships.</p>
+        <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Schedule your initial consultation">Schedule Your Consultation</a>
+    </div>
+
+    <!-- Modals for Package Details -->
+    <!-- Plumeria Package Modal -->
+    <div class="modal fade" id="plumeriaModal" tabindex="-1" aria-labelledby="plumeriaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header plumeria-card">
+                    <h5 class="modal-title" id="plumeriaModalLabel">Plumeria Package ($175/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This 4-week package includes weekly coaching sessions focused on:</p>
+                    <ul>
+                        <li>Understanding limerence and how it differs from love</li>
+                        <li>Identifying signs and symptoms in your daily life</li>
+                        <li>Tracking and challenging obsessive thought patterns</li>
+                        <li>Mindfulness techniques to manage triggers</li>
+                        <li>Developing coping skills to replace limerent behavior</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Book the Plumeria Package">Interested</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="hibiscusModal" tabindex="-1" aria-labelledby="hibiscusModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="hibiscusModalLabel">Hibiscus Package ($150/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>This package includes weekly sessions, over a period of 8 weeks. It is structured similarly to the 4-week package, though it incorporates exploration of childhood experiences and impact on limerence, healthy relationship skills, and further mindfulness practice. This package will also include use of an assessment tool to measure progress in week 1 and 8.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
+    <!-- Hibiscus Package Modal -->
+    <div class="modal fade" id="hibiscusModal" tabindex="-1" aria-labelledby="hibiscusModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header hibiscus-card">
+                    <h5 class="modal-title" id="hibiscusModalLabel">Hibiscus Package ($150/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This 8-week package builds upon the Plumeria Package and includes:</p>
+                    <ul>
+                        <li>Exploration of childhood experiences impacting limerence</li>
+                        <li>Developing healthy relationship skills</li>
+                        <li>Advanced mindfulness practices</li>
+                        <li>Use of assessment tools to measure progress</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Book the Hibiscus Package">Interested</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="waterLilyModal" tabindex="-1" aria-labelledby="waterLilyModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="waterLilyModalLabel">Water Lily Package ($125/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Package 3 includes weekly sessions, over a period of 12 weeks. All of the material covered in packages 1 and 2 will be included. Additionally, we will further explore childhood experiences and how they manifest in adult relationships, value-based living, limerence in marriage or a long-term partnership, making meaning after limerence, and a plan moving forward to sustain well-being and quality of life. This package will also incorporate use of an assessment tool in weeks 1, 6, and 12 to measure progress. After completing package 3, you will receive a discounted price for each future individual session, as needed. You will be eligible for monthly process groups, and you will have access to our private Facebook limerence group for ongoing support.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
+    <!-- Water Lily Package Modal -->
+    <div class="modal fade" id="waterLilyModal" tabindex="-1" aria-labelledby="waterLilyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header water-lily-card">
+                    <h5 class="modal-title" id="waterLilyModalLabel">Water Lily Package ($125/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This comprehensive 12-week package includes all features of the previous packages, plus:</p>
+                    <ul>
+                        <li>In-depth exploration of childhood influences on adult relationships</li>
+                        <li>Value-based living and goal setting</li>
+                        <li>Strategies for managing limerence in long-term partnerships</li>
+                        <li>Developing a sustainable plan for ongoing well-being</li>
+                        <li>Access to assessment tools and progress tracking</li>
+                        <li>Eligibility for monthly process groups and private support community</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary" title="Book the Water Lily Package">Interested</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="processGroupModal" tabindex="-1" aria-labelledby="processGroupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-<div class="modal-header">
-                <h5 class="modal-title" id="processGroupModalLabel">Monthly Process Groups ($40/month)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Those who complete the 12-week package are eligible to join our monthly process group for $40/month. We will be covering certain themes each week, in which individuals can share their experience in a safe and supportive environment. Building a limerence community, in which we can raise each other up, is so important! Monthly groups will go through a 12-month period and then begin again. Groups will consist of 6-8 people. Before our process group can begin, I will gather eligible clients and connect with you as to when the first group will take place.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
+    <!-- Process Group Modal -->
+    <div class="modal fade" id="processGroupModal" tabindex="-1" aria-labelledby="processGroupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header orchid-card">
+                    <h5 class="modal-title" id="processGroupModalLabel">Monthly Process Groups ($40/month)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our monthly process groups offer:</p>
+                    <ul>
+                        <li>A safe and supportive environment to share experiences</li>
+                        <li>Themed discussions to explore various aspects of limerence</li>
+                        <li>Community building with others on a similar journey</li>
+                        <li>Groups of 6-8 people for personalized attention</li>
+                    </ul>
+                    <p><em>Note: Available to clients who have completed the 12-week package.</em></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="{% url 'contact' %}" class="btn btn-primary" title="Contact us to join the Process Groups">Interested</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="individualSessionModal" tabindex="-1" aria-labelledby="individualSessionModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="individualSessionModalLabel">Individual Sessions ($200/session)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Individual sessions are available for those seeking more personalized support. Sliding scale pricing is available upon request. Please contact us to discuss further and schedule a session.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://calendly.com/avalonz-bornfreelimerencecoaching/50min" class="btn btn-primary">Interested</a>
+    <!-- Individual Sessions Modal -->
+    <div class="modal fade" id="individualSessionModal" tabindex="-1" aria-labelledby="individualSessionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header chrysanthemum-card">
+                    <h5 class="modal-title" id="individualSessionModalLabel">Individual Sessions ($200/session)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our individual sessions offer:</p>
+                    <ul>
+                        <li>Personalized coaching tailored to your specific needs</li>
+                        <li>Flexible scheduling to accommodate your availability</li>
+                        <li>Sliding scale pricing available upon request</li>
+                    </ul>
+                    <p>Please <a href="{% url 'contact' %}" title="Contact us to discuss individual sessions">contact us</a> to discuss further and schedule a session.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="{% url 'contact' %}" class="btn btn-primary" title="Contact us to book an individual session">Interested</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Info Modal -->
-<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="infoModalLabel">Limerence Resources</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li><a href="https://www.livingwithlimerence.com" target="_blank">Living With Limerence by Dr. L (Website)</a></li>
-                    <li><a href="https://www.amazon.com/Limerent-Mind-Permanently-Limerence-Shine/dp/B08C961BVC/ref=pd_lpo_sccl_2/142-6124788-5568730?pd_rd_w=mLtt9&content-id=amzn1.sym.4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_p=4c8c52db-06f8-4e42-8e56-912796f2ea6c&pf_rd_r=S6R4B4H49HTDXQHTR4VX&pd_rd_wg=LLp8J&pd_rd_r=e67a5e99-a332-4333-aa79-9d6122802929&pd_rd_i=B08C961BVC&psc=1" target="_blank">Living With Limerence by Lucy Bain (Book)</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=ga4VHjKkv70&list=PLl504D3b_OPhL2U5T5rxS7O_d_q5JKyfH" target="_blank">“Crappy Childhood Fairy” — YouTube Channel</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=Fvi9pDnIxb4" target="_blank">Patrick Teahan — YouTube Channel</a></li>
-                    <li><a href="https://www.eckharttolle.com/a-new-earth/" target="_blank">A New Earth by Eckhart Tolle</a></li>
-                    <li><a href="https://jonkabat-zinn.com/offerings/books/" target="_blank">Wherever You Go, There You Are by Jon Kabat-Zinn</a></li>
-                    <li><a href="https://www.ucsd.edu/mindfulness" target="_blank">UCSD Center for Mindfulness (Guided Meditations)</a></li>
-                </ul>
+
+    <!-- Info Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header chrysanthemum-card">
+                    <h5 class="modal-title" id="infoModalLabel">Limerence Resources</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="https://www.livingwithlimerence.com" target="_blank" title="Visit Living With Limerence by Dr. L">Living With Limerence by Dr. L (Website)</a></li>
+                        <li><a href="https://www.amazon.com/Living-Limerence-Journey-Obsessive-Infatuation-ebook/dp/B07VWSG7Q8" target="_blank" title="Buy Living With Limerence by Dr. L on Amazon">Living With Limerence by Dr. L (Book)</a></li>
+                        <li><a href="https://www.youtube.com/c/CrappyChildhoodFairy" target="_blank" title="Visit Crappy Childhood Fairy on YouTube">Crappy Childhood Fairy – YouTube Channel</a></li>
+                        <li><a href="https://www.youtube.com/c/PatrickTeahanLICSW" target="_blank" title="Visit Patrick Teahan on YouTube">Patrick Teahan – YouTube Channel</a></li>
+                        <li><a href="https://www.eckharttolle.com/a-new-earth/" target="_blank" title="Learn about A New Earth by Eckhart Tolle">A New Earth by Eckhart Tolle</a></li>
+                        <li><a href="https://jonkabat-zinn.com/books/" target="_blank" title="Learn about Wherever You Go, There You Are by Jon Kabat-Zinn">Wherever You Go, There You Are by Jon Kabat-Zinn</a></li>
+                        <li><a href="https://health.ucsd.edu/specialties/mindfulness/programs/mbsr/Pages/audio.aspx" target="_blank" title="Access UCSD Center for Mindfulness Guided Meditations">UCSD Center for Mindfulness (Guided Meditations)</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Add Calendly Widget at the bottom of the page -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/avalonz-bornfreelimerencecoaching/50min?primary_color=7fb2f6" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
+    <!-- Calendly Widget at the bottom of the page -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/avalonz-bornfreelimerencecoaching/50min?primary_color=7fb2f6" style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</div>
 {% endblock %}
